@@ -6,17 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://qingfengmy.github.io">
-  <title>Archives: 2016/11 | 清风明月</title>
+  <title>weixin://preInjectJSBridge/fail错误 | 清风明月</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="路漫漫其修远兮，吾将上下而求索">
-<meta property="og:type" content="website">
-<meta property="og:title" content="清风明月">
-<meta property="og:url" content="https://qingfengmy.github.io/archives/2016/11/index.html">
+  <meta name="description" content="用reactjs写的SPA网站，在android的微信和QQ浏览器中会报这个问题，PC和IOS的没有问题。此问题发生的原因是Android端对es6的不兼容，使用了模版符号`。
+但项目中已经使用了babel工具，还是有这个问题。最后的解决方式是为浏览器添加es6的运行环境。
+Polyfill官网地址。
+To include the polyfill you need to require it a">
+<meta property="og:type" content="article">
+<meta property="og:title" content="weixin://preInjectJSBridge/fail错误">
+<meta property="og:url" content="https://qingfengmy.github.io/2016/11/30/weixin-preInjectJSBridge-fail错误/index.html">
 <meta property="og:site_name" content="清风明月">
-<meta property="og:description" content="路漫漫其修远兮，吾将上下而求索">
+<meta property="og:description" content="用reactjs写的SPA网站，在android的微信和QQ浏览器中会报这个问题，PC和IOS的没有问题。此问题发生的原因是Android端对es6的不兼容，使用了模版符号`。
+但项目中已经使用了babel工具，还是有这个问题。最后的解决方式是为浏览器添加es6的运行环境。
+Polyfill官网地址。
+To include the polyfill you need to require it a">
+<meta property="og:updated_time" content="2016-11-30T03:11:09.609Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="清风明月">
-<meta name="twitter:description" content="路漫漫其修远兮，吾将上下而求索">
+<meta name="twitter:title" content="weixin://preInjectJSBridge/fail错误">
+<meta name="twitter:description" content="用reactjs写的SPA网站，在android的微信和QQ浏览器中会报这个问题，PC和IOS的没有问题。此问题发生的原因是Android端对es6的不兼容，使用了模版符号`。
+但项目中已经使用了babel工具，还是有这个问题。最后的解决方式是为浏览器添加es6的运行环境。
+Polyfill官网地址。
+To include the polyfill you need to require it a">
   
   
     <link rel="icon" href="/favicon.png">
@@ -130,209 +140,118 @@
 </nav>
 
       <div class="body-wrap">
+        <article id="post-weixin-preInjectJSBridge-fail错误" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
         
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/30/weixin-preInjectJSBridge-fail错误/" class="archive-article-date">
-  	<time datetime="2016-11-30T03:03:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/30/weixin-preInjectJSBridge-fail错误/">weixin://preInjectJSBridge/fail错误</a>
+    <h1 class="article-title" itemprop="name">
+      weixin://preInjectJSBridge/fail错误
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        <a href="/2016/11/30/weixin-preInjectJSBridge-fail错误/" class="archive-article-date">
+  	<time datetime="2016-11-30T03:03:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>用reactjs写的SPA网站，在android的微信和QQ浏览器中会报这个问题，PC和IOS的没有问题。此问题发生的原因是Android端对es6的不兼容，使用了模版符号`。</p>
+<p>但项目中已经使用了babel工具，还是有这个问题。最后的解决方式是为浏览器添加es6的运行环境。</p>
+<p><a href="https://babeljs.io/docs/usage/polyfill/" target="_blank" rel="external">Polyfill官网地址</a>。</p>
+<p>To include the polyfill you need to require it at the top of the entry point to your application.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">require(&quot;babel-polyfill&quot;);</div></pre></td></tr></table></figure></p>
+<p>If you are using ES6’s import syntax in your application’s entry point, you should instead import the polyfill at the top of the entry point to ensure the polyfills are loaded first:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import &quot;babel-polyfill&quot;;</div></pre></td></tr></table></figure></p>
+<p>With webpack.config.js, add babel-polyfill to your entry array:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">module.exports = &#123;</div><div class="line">   entry: [&apos;babel-polyfill&apos;, &apos;./app/js&apos;]</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/reactjs/">reactjs</a></li></ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        <div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode"></div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/30/调试手机端的微信页面/" class="archive-article-date">
-  	<time datetime="2016-11-30T03:02:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/30/调试手机端的微信页面/">调试手机端的微信页面</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
-	</div>
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/11/30/调试手机端的微信页面/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">调试手机端的微信页面</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/30/windows中多版本的nodejs/" class="archive-article-date">
-  	<time datetime="2016-11-30T02:57:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/30/windows中多版本的nodejs/">windows中多版本的nodejs</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li></ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/30/使用hexo和github搭建博客/" class="archive-article-date">
-  	<time datetime="2016-11-30T02:55:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/30/使用hexo和github搭建博客/">使用hexo和github搭建博客</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/29/纯-CSS-实现高度与宽度成比例的效果/" class="archive-article-date">
-  	<time datetime="2016-11-29T10:19:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/29/纯-CSS-实现高度与宽度成比例的效果/">纯 CSS 实现高度与宽度成比例的效果</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/29/hello-world/" class="archive-article-date">
-  	<time datetime="2016-11-29T10:03:16.074Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/29/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
       </div>
@@ -354,8 +273,8 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

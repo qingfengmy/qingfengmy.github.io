@@ -132,6 +132,253 @@
       <div class="body-wrap">
         
   
+    <article id="post-weixin-preInjectJSBridge-fail错误" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/30/weixin-preInjectJSBridge-fail错误/">weixin://preInjectJSBridge/fail错误</a>
+    </h1>
+  
+
+        <a href="/2016/11/30/weixin-preInjectJSBridge-fail错误/" class="archive-article-date">
+  	<time datetime="2016-11-30T03:03:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>用reactjs写的SPA网站，在android的微信和QQ浏览器中会报这个问题，PC和IOS的没有问题。此问题发生的原因是Android端对es6的不兼容，使用了模版符号`。</p>
+<p>但项目中已经使用了babel工具，还是有这个问题。最后的解决方式是为浏览器添加es6的运行环境。</p>
+<p><a href="https://babeljs.io/docs/usage/polyfill/" target="_blank" rel="external">Polyfill官网地址</a>。</p>
+<p>To include the polyfill you need to require it at the top of the entry point to your application.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">require(&quot;babel-polyfill&quot;);</div></pre></td></tr></table></figure></p>
+<p>If you are using ES6’s import syntax in your application’s entry point, you should instead import the polyfill at the top of the entry point to ensure the polyfills are loaded first:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import &quot;babel-polyfill&quot;;</div></pre></td></tr></table></figure></p>
+<p>With webpack.config.js, add babel-polyfill to your entry array:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">module.exports = &#123;</div><div class="line">   entry: [&apos;babel-polyfill&apos;, &apos;./app/js&apos;]</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/reactjs/">reactjs</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/11/30/weixin-preInjectJSBridge-fail错误/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-调试手机端的微信页面" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/30/调试手机端的微信页面/">调试手机端的微信页面</a>
+    </h1>
+  
+
+        <a href="/2016/11/30/调试手机端的微信页面/" class="archive-article-date">
+  	<time datetime="2016-11-30T03:02:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#### 3.1 安装</div><div class="line"> Weinre是基于nodejs实现的</div></pre></td></tr></table></figure></p>
+<p>npm -g install weinre<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#### 3.2 运行</div></pre></td></tr></table></figure></p>
+<p>weinre<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">像上面这样虽然启动成功了，但是默认boundHost为localhost，只能本地PC上用http://localho-st:8080来访问，将localhost换做本地ip就无法打开Weinre调试工具，为了能在其他设备以及本地设备用ip打开Weinre调试工具，我们还需要设置boundHost为&quot;-all-&quot;，如下：</div></pre></td></tr></table></figure></p>
+<p>weinre –boundHost -all-<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">执行完上面的命令，在浏览器地址栏中输入下面的网址打开Weinre调试工具。在页面中，有两部分是我们要使用的，第一部分是```Access Points```，其中</div></pre></td></tr></table></figure></p>
+<p>debug client user interface```是调试入口，可以通过这个地址进入Debug Client。</p>
+<p>第二个部分是<code>Target Script</code>，如下图，这个地址是系统根据我们启动Weinre服务时的参数设置生成的target-script.js文件的链接地址。我们需要将这个js文件嵌入到待测试的页面中。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/11/30/调试手机端的微信页面/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-windows中多版本的nodejs" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/30/windows中多版本的nodejs/">windows中多版本的nodejs</a>
+    </h1>
+  
+
+        <a href="/2016/11/30/windows中多版本的nodejs/" class="archive-article-date">
+  	<time datetime="2016-11-30T02:57:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1 问题描述"></a>1 问题描述</h4><p>在使用hexo搭建博客系统时，在执行<figure class="highlight plain"><figcaption><span>new "hello"```命令时，报错，错误信息是：</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">```</div></pre></td></tr></table></figure></p>
+<p>google发现是因为<figure class="highlight plain"><figcaption><span>6.0的API不支持graceful-fs```，本地开发安装的nodejs版本是6.9.1。于是试着第一步解决方式。</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#### 2 第一步解决</div><div class="line">第一步解决方式是本地装两个nodejs版本，目录结构是这样：</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>nodejs<br>v6.9.1<br>v5.12.0<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">可是在安装5.12.0时，提示本地已经有更高版本的nodejs，安装进程退出。</div><div class="line">#### 3 第二步解决</div><div class="line">于是google，考虑多版本nodejs的解决方式。一般有两种</div></pre></td></tr></table></figure></p>
+<p>n  express的作者开发的， 安装需要npm install n -g<br>nvm 独立的程序，和npm没有关系<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">但是在windows上就没有选择哪个这种幸福的烦恼了。```n```不支持windows系统；```nvm```也不支持windows系统，只是在windows系统上有个参照```nvm```实现的工具```nvm-windows```，命令和```nvm```的用法一样，于是选择```nvm-windows```。</div><div class="line"></div><div class="line">官网地址：https://github.com/coreybutler/nvm-windows</div><div class="line"></div><div class="line">windows上还有其他实现，nvmwm gnvm等，坑较多，弃。</div><div class="line">#### 4 坑</div><div class="line">截至写作时间，```nvm-windows```的最新版本是1.1.1，但下载较慢，经常失败。于是下载了1.1.0版本，很快下载完，但1.1.0的版本的好多坑在1.1.1的版本已经修复了，于是不明真相的我在坑中挣扎了很久，终于大悟，于是下载1.1.1的版本安装。</div><div class="line"></div><div class="line">***注意：一定要看版本间差异，尽量选择高版本***</div><div class="line"></div><div class="line">安装```nvm-windows```之前一定要把你本地的nodejs卸载掉，否则```nvm-windows```在切换nodejs版本时，总是切换失败。</div><div class="line"></div><div class="line">而切换失败的问题还可能的原因是```root```和```path```的路径中含有空格或者其他特殊字符。于是目录如下：</div></pre></td></tr></table></figure></p>
+<p>C<br>public<br>nvm_window<br>root<br>path<br>svn<br>python<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">刚安装完成```nvm-window```时，第一次运行```nvm -v```会提示错误：</div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>ERROR open \settings.txt<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">这就需要把```nvm-window```安装路径中的setting.txt文件拷贝到C盘根目录下。</div><div class="line"></div><div class="line">nvm-windows安装nodejs，默认会从nodejs.org官网下载，由于国内环境，需要配置淘宝镜像，配置方法是在setting.txt文件中增加或修改：</div></pre></td></tr></table></figure></p>
+<p>node_mirror: <a href="https://npm.taobao.org/mirrors/node/" target="_blank" rel="external">https://npm.taobao.org/mirrors/node/</a><br>npm_mirror: <a href="https://npm.taobao.org/mirrors/npm/" target="_blank" rel="external">https://npm.taobao.org/mirrors/npm/</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">***注意修改的是C盘根目录的setting.txt***</div><div class="line"></div><div class="line">#### 5 基本用法</div></pre></td></tr></table></figure></p>
+<p>nvm install 5.0.0<br>nvm uninstall 4.2.2<br>nvm use 4.2.2<br>nvm list<br>```</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/11/30/windows中多版本的nodejs/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
+    <article id="post-使用hexo和github搭建博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/11/30/使用hexo和github搭建博客/">使用hexo和github搭建博客</a>
+    </h1>
+  
+
+        <a href="/2016/11/30/使用hexo和github搭建博客/" class="archive-article-date">
+  	<time datetime="2016-11-30T02:55:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="使用hexo和github搭建博客"><a href="#使用hexo和github搭建博客" class="headerlink" title="使用hexo和github搭建博客"></a>使用hexo和github搭建博客</h3><h4 id="1-第一步：基础安装"><a href="#1-第一步：基础安装" class="headerlink" title="1 第一步：基础安装"></a>1 第一步：基础安装</h4><p>安装git和nodejs</p>
+<h4 id="2-第二步：申请github账号"><a href="#2-第二步：申请github账号" class="headerlink" title="2 第二步：申请github账号"></a>2 第二步：申请github账号</h4><p>申请github账户并建立xxx.github.io项目</p>
+<h4 id="3-第三步：安装hexo"><a href="#3-第三步：安装hexo" class="headerlink" title="3 第三步：安装hexo"></a>3 第三步：安装hexo</h4><p>安装之前先改镜像地址，国内环境，你懂的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</div></pre></td></tr></table></figure></p>
+<p>安装hexo<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cnpm install -g hexo-cli</div><div class="line">cnpm install hexo --save</div></pre></td></tr></table></figure></p>
+<p>校验是否完成<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo -v</div></pre></td></tr></table></figure></p>
+<p>初始化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo init</div></pre></td></tr></table></figure></p>
+<p>安装依赖<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install</div></pre></td></tr></table></figure></p>
+<p>预览<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo s -g</div></pre></td></tr></table></figure></p>
+<h4 id="4-第四步：-管理"><a href="#4-第四步：-管理" class="headerlink" title="4 第四步： 管理"></a>4 第四步： 管理</h4><p>配置修改<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line">#博客名称</div><div class="line">title: 我的博客</div><div class="line">#副标题</div><div class="line">subtitle: 一天进步一点</div><div class="line">#简介</div><div class="line">description: 记录生活点滴</div><div class="line">#博客作者</div><div class="line">author: John Doe</div><div class="line">#博客语言</div><div class="line">language: zh-CN</div><div class="line">#时区</div><div class="line">timezone:</div><div class="line"></div><div class="line">#博客地址,与申请的GitHub一致</div><div class="line">url: http://elfwalk.github.io</div><div class="line">root: /</div><div class="line">#博客链接格式</div><div class="line">permalink: :year/:month/:day/:title/</div><div class="line">permalink_defaults:</div><div class="line">...</div><div class="line">#日期格式</div><div class="line">date_format: YYYY-MM-DD</div><div class="line">time_format: HH:mm:ss</div><div class="line"></div><div class="line">#分页，每页文章数量</div><div class="line">per_page: 10</div><div class="line">pagination_dir: page</div><div class="line"></div><div class="line">#博客主题</div><div class="line">theme: landscape</div><div class="line"></div><div class="line">#发布设置</div><div class="line">deploy: </div><div class="line">  type: git</div><div class="line">  #elfwalk改为你的github用户名</div><div class="line">  repository: https://github.com/elfwalk/elfwalk.github.io.git</div><div class="line">  branch: master</div></pre></td></tr></table></figure></p>
+<p>创建文章<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo new &quot;hello&quot;</div></pre></td></tr></table></figure></p>
+<h4 id="5-发布"><a href="#5-发布" class="headerlink" title="5 发布"></a>5 发布</h4><p>安装hexo的git工具<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cnpm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
+<p>发布<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">hexo d -g</div></pre></td></tr></table></figure></p>
+<p>参考文章：<a href="http://blog.csdn.net/jzooo/article/details/46781805" target="_blank" rel="external">零基础免费搭建个人博客-hexo+github</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/11/30/使用hexo和github搭建博客/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-纯-CSS-实现高度与宽度成比例的效果" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -168,56 +415,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2016/11/29/纯-CSS-实现高度与宽度成比例的效果/#more">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-希望" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/29/希望/">希望</a>
-    </h1>
-  
-
-        <a href="/2016/11/29/希望/" class="archive-article-date">
-  	<time datetime="2016-11-29T10:08:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-29</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>看天空飘的云还有梦<br>看生命回家路路程漫漫<br>看明天的岁月越走越远<br>远方的回忆的你的微笑<br>天黑路茫茫心中的彷徨<br>没有云的方向<br>希望的翅膀一天终张开<br>飞翔天上</p>
-<p>看天空飞的鸟还有梦<br>看清风像带路吹散淡雾<br>看冬天悲的雪越来越远<br>昨天的曾经的我的微笑<br>分开的感伤想飞的彷徨<br>有天跑出想像<br>心中一个梦像雨后彩虹<br>挂在天空</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/11/29/希望/#more">展开全文 >></a>
         </p>
       
 
@@ -352,7 +549,7 @@
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/css/" style="font-size: 10px;">css</a>
+    				<a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/reactjs/" style="font-size: 10px;">reactjs</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a>
     			</div>
     	</section>
     

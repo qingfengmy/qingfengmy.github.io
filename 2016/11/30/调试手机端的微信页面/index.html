@@ -6,17 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://qingfengmy.github.io">
-  <title>Archives: 2016/11 | 清风明月</title>
+  <title>调试手机端的微信页面 | 清风明月</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="路漫漫其修远兮，吾将上下而求索">
-<meta property="og:type" content="website">
-<meta property="og:title" content="清风明月">
-<meta property="og:url" content="https://qingfengmy.github.io/archives/2016/11/index.html">
+  <meta name="description" content="手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用12#### 3.1 安装 Weinre是基于nodejs实现的
+npm -g install weinre1#### 3.2 运行
+weinre1像上面这样虽然启动成功了，但是默认boundHost为localhost，只能本地PC上用http://localho-s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="调试手机端的微信页面">
+<meta property="og:url" content="https://qingfengmy.github.io/2016/11/30/调试手机端的微信页面/index.html">
 <meta property="og:site_name" content="清风明月">
-<meta property="og:description" content="路漫漫其修远兮，吾将上下而求索">
+<meta property="og:description" content="手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用12#### 3.1 安装 Weinre是基于nodejs实现的
+npm -g install weinre1#### 3.2 运行
+weinre1像上面这样虽然启动成功了，但是默认boundHost为localhost，只能本地PC上用http://localho-s">
+<meta property="og:updated_time" content="2016-11-30T03:02:47.397Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="清风明月">
-<meta name="twitter:description" content="路漫漫其修远兮，吾将上下而求索">
+<meta name="twitter:title" content="调试手机端的微信页面">
+<meta name="twitter:description" content="手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用12#### 3.1 安装 Weinre是基于nodejs实现的
+npm -g install weinre1#### 3.2 运行
+weinre1像上面这样虽然启动成功了，但是默认boundHost为localhost，只能本地PC上用http://localho-s">
   
   
     <link rel="icon" href="/favicon.png">
@@ -130,209 +137,127 @@
 </nav>
 
       <div class="body-wrap">
+        <article id="post-调试手机端的微信页面" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
         
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/30/weixin-preInjectJSBridge-fail错误/" class="archive-article-date">
-  	<time datetime="2016-11-30T03:03:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/30/weixin-preInjectJSBridge-fail错误/">weixin://preInjectJSBridge/fail错误</a>
+    <h1 class="article-title" itemprop="name">
+      调试手机端的微信页面
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/reactjs/">reactjs</a></li></ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/30/调试手机端的微信页面/" class="archive-article-date">
+        <a href="/2016/11/30/调试手机端的微信页面/" class="archive-article-date">
   	<time datetime="2016-11-30T03:02:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/30/调试手机端的微信页面/">调试手机端的微信页面</a>
-    </h1>
-  
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#### 3.1 安装</div><div class="line"> Weinre是基于nodejs实现的</div></pre></td></tr></table></figure></p>
+<p>npm -g install weinre<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#### 3.2 运行</div></pre></td></tr></table></figure></p>
+<p>weinre<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">像上面这样虽然启动成功了，但是默认boundHost为localhost，只能本地PC上用http://localho-st:8080来访问，将localhost换做本地ip就无法打开Weinre调试工具，为了能在其他设备以及本地设备用ip打开Weinre调试工具，我们还需要设置boundHost为&quot;-all-&quot;，如下：</div></pre></td></tr></table></figure></p>
+<p>weinre –boundHost -all-<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">执行完上面的命令，在浏览器地址栏中输入下面的网址打开Weinre调试工具。在页面中，有两部分是我们要使用的，第一部分是```Access Points```，其中</div></pre></td></tr></table></figure></p>
+<p>debug client user interface```是调试入口，可以通过这个地址进入Debug Client。</p>
+<p>第二个部分是<code>Target Script</code>，如下图，这个地址是系统根据我们启动Weinre服务时的参数设置生成的target-script.js文件的链接地址。我们需要将这个js文件嵌入到待测试的页面中。</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags"></i>
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/前端/">前端</a></li></ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        <div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode"></div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/30/windows中多版本的nodejs/" class="archive-article-date">
-  	<time datetime="2016-11-30T02:57:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/30/windows中多版本的nodejs/">windows中多版本的nodejs</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/nodejs/">nodejs</a></li></ul>
-	</div>
+  
+<nav id="article-nav">
+  
+    <a href="/2016/11/30/weixin-preInjectJSBridge-fail错误/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          weixin://preInjectJSBridge/fail错误
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/11/30/windows中多版本的nodejs/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">windows中多版本的nodejs</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/30/使用hexo和github搭建博客/" class="archive-article-date">
-  	<time datetime="2016-11-30T02:55:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/30/使用hexo和github搭建博客/">使用hexo和github搭建博客</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
-	</div>
 
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/29/纯-CSS-实现高度与宽度成比例的效果/" class="archive-article-date">
-  	<time datetime="2016-11-29T10:19:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/29/纯-CSS-实现高度与宽度成比例的效果/">纯 CSS 实现高度与宽度成比例的效果</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/css/">css</a></li></ul>
-	</div>
 
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/11/29/hello-world/" class="archive-article-date">
-  	<time datetime="2016-11-29T10:03:16.074Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/11/29/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
       </div>
@@ -354,8 +279,8 @@
 		mathjax: false,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
