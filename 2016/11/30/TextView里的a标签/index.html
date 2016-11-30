@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="https://qingfengmy.github.io">
+  <title>TextView里的a标签 | 清风明月</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1. a标签定义123String text = &amp;quot;我的博客：&amp;lt;a href=&amp;apos;https://qingfengmy.github.io&amp;apos;&amp;gt;QingFengMy&amp;lt;/a&amp;gt;和我的微博&amp;lt;a href=&amp;apos;http://weibo.com/u/1731410020&amp;apos;&amp;gt;武安长空&amp;lt;/a&amp;gt;&amp;quot;);textVi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TextView里的a标签">
+<meta property="og:url" content="https://qingfengmy.github.io/2016/11/30/TextView里的a标签/index.html">
+<meta property="og:site_name" content="清风明月">
+<meta property="og:description" content="1. a标签定义123String text = &amp;quot;我的博客：&amp;lt;a href=&amp;apos;https://qingfengmy.github.io&amp;apos;&amp;gt;QingFengMy&amp;lt;/a&amp;gt;和我的微博&amp;lt;a href=&amp;apos;http://weibo.com/u/1731410020&amp;apos;&amp;gt;武安长空&amp;lt;/a&amp;gt;&amp;quot;);textVi">
+<meta property="og:updated_time" content="2016-11-30T07:15:21.503Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TextView里的a标签">
+<meta name="twitter:description" content="1. a标签定义123String text = &amp;quot;我的博客：&amp;lt;a href=&amp;apos;https://qingfengmy.github.io&amp;apos;&amp;gt;QingFengMy&amp;lt;/a&amp;gt;和我的微博&amp;lt;a href=&amp;apos;http://weibo.com/u/1731410020&amp;apos;&amp;gt;武安长空&amp;lt;/a&amp;gt;&amp;quot;);textVi">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://tva2.sinaimg.cn/crop.0.0.512.512.180/67333864jw8eo1vias9chj20e80e8417.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">qingfengmy</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">心有猛虎，细嗅蔷薇</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/qingfengmy" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="http://weibo.com/u/1731410020" title="weibo"><i class="icon-weibo"></i></a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-sort"></i></div>
+  		<h1 class="header-author js-mobile-header hide">qingfengmy</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="http://tva2.sinaimg.cn/crop.0.0.512.512.180/67333864jw8eo1vias9chj20e80e8417.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">qingfengmy</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">心有猛虎，细嗅蔷薇</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/qingfengmy" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/u/1731410020" title="weibo"><i class="icon-weibo"></i></a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-TextView里的a标签" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      TextView里的a标签
+    </h1>
+  
+
+        <a href="/2016/11/30/TextView里的a标签/" class="archive-article-date">
+  	<time datetime="2016-11-30T07:02:34.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1-a标签定义"><a href="#1-a标签定义" class="headerlink" title="1. a标签定义"></a>1. a标签定义</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">String text = &quot;我的博客：&lt;a href=&apos;https://qingfengmy.github.io&apos;&gt;QingFengMy&lt;/a&gt;和我的微博&lt;a href=&apos;http://weibo.com/u/1731410020&apos;&gt;武安长空&lt;/a&gt;&quot;);</div><div class="line"></div><div class="line">textView.setText(Html.fromHtml(text));</div></pre></td></tr></table></figure>
+<h4 id="2-a标签样式"><a href="#2-a标签样式" class="headerlink" title="2. a标签样式"></a>2. a标签样式</h4><p>android中的TextView只支持部分标签，不支持css样式，所以通过css样式修改a标签颜色和去掉a标签的下划线都是不可取的。修改样式可以通过下面这种方式<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">private class MyURLSpan extends ClickableSpan &#123;</div><div class="line"></div><div class="line">    @Override</div><div class="line">    public void updateDrawState(TextPaint ds) &#123;</div><div class="line">        super.updateDrawState(ds);</div><div class="line">        ds.setColor(Color.parseColor(&quot;#2a8bde&quot;));</div><div class="line">        ds.setUnderlineText(false);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<h4 id="3-点击事件"><a href="#3-点击事件" class="headerlink" title="3. 点击事件"></a>3. 点击事件</h4><p>点击事件必须要加上下面的代码，且在setText之后才有效。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">textView.setMovementMethod(LinkMovementMethod.getInstance());</div></pre></td></tr></table></figure></p>
+<h4 id="4-拦截url"><a href="#4-拦截url" class="headerlink" title="4. 拦截url"></a>4. 拦截url</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">CharSequence text = textView.getText();</div><div class="line">if (text instanceof Spannable) &#123;</div><div class="line">    int end = text.length();</div><div class="line">    Spannable sp = (Spannable) text;</div><div class="line">    URLSpan[] urls = sp.getSpans(0, end, URLSpan.class);</div><div class="line">    SpannableStringBuilder style = new SpannableStringBuilder(text);</div><div class="line">    style.clearSpans();// should clear old spans</div><div class="line"></div><div class="line">    //循环把链接发过去</div><div class="line">    for (URLSpan url : urls) &#123;</div><div class="line">        MyURLSpan myURLSpan = new MyURLSpan(url.getURL());</div><div class="line">        style.setSpan(myURLSpan, sp.getSpanStart(url),</div><div class="line">                sp.getSpanEnd(url), Spannable.SPAN_EXCLUSIVE_INCLUSIVE);</div><div class="line">    &#125;</div><div class="line">    textView.setText(style);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="5-TextView设置前景色和背景色"><a href="#5-TextView设置前景色和背景色" class="headerlink" title="5. TextView设置前景色和背景色"></a>5. TextView设置前景色和背景色</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">SpannableStringBuilder style = new SpannableStringBuilder(productName);</div><div class="line">style.setSpan(new AbsoluteSizeSpan(12), 0, 2, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);</div><div class="line">style.setSpan(new BackgroundColorSpan(Color.RED), 0, 2, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);</div><div class="line">style.setSpan(new ForegroundColorSpan(Color.WHITE), 0, 2, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);</div><div class="line">textView.setText(style);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">Spanned.SPAN_EXCLUSIVE_EXCLUSIVE(前后都不包括)</div><div class="line">Spanned.SPAN_INCLUSIVE_EXCLUSIVE(前面包括，后面不包括)</div><div class="line">Spanned.SPAN_EXCLUSIVE_INCLUSIVE(前面不包括，后面包括)</div><div class="line">Spanned.SPAN_INCLUSIVE_INCLUSIVE(前后都包括)</div></pre></td></tr></table></figure>
+<h4 id="6-a标签里的图片"><a href="#6-a标签里的图片" class="headerlink" title="6. a标签里的图片"></a>6. a标签里的图片</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">TextView tv2 = (TextView) findViewById(R.id.tv2);</div><div class="line">String productName = &quot;&lt;img src=&apos;&quot; + R.mipmap.ic_launcher + &quot;&apos;&gt;&lt;/img&gt;我的App&quot;;</div><div class="line">tv2.setText(Html.fromHtml(productName, getImageGetterInstance(), null));</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">private Html.ImageGetter getImageGetterInstance() &#123;</div><div class="line">    Html.ImageGetter imageGetter = new Html.ImageGetter() &#123;</div><div class="line">        @Override</div><div class="line">        public Drawable getDrawable(String source) &#123;</div><div class="line">            int id = Integer.parseInt(source);</div><div class="line">            Drawable d = getResources().getDrawable(id);</div><div class="line">            int width = d.getIntrinsicWidth();</div><div class="line">            int height = d.getIntrinsicHeight();</div><div class="line">            d.setBounds(0, 0, width, height);</div><div class="line">            return d;</div><div class="line">        &#125;</div><div class="line">    &#125;;</div><div class="line">    return imageGetter;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="7-完整代码"><a href="#7-完整代码" class="headerlink" title="7. 完整代码"></a>7. 完整代码</h4><p><a href="https://github.com/qingfengmy/android-demo/tree/master/AINText" target="_blank" rel="external">TextView里的a标签完整代码</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/android/">android</a></li></ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2016/11/30/nexus5-隐藏虚拟键/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">nexus5 隐藏虚拟键</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 qingfengmy
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/nexus5/" style="font-size: 10px;">nexus5</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/reactjs/" style="font-size: 10px;">reactjs</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://litten.me/">Litten</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">Android和React方向&lt;br&gt;勿忘初心方得始终</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
