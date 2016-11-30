@@ -8,25 +8,19 @@
   <link rel="dns-prefetch" href="https://qingfengmy.github.io">
   <title>windows中多版本的nodejs | 清风明月</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1 问题描述在使用hexo搭建博客系统时，在执行new &quot;hello&quot;```命令时，报错，错误信息是：1```
-google发现是因为6.0的API不支持graceful-fs```，本地开发安装的nodejs版本是6.9.1。于是试着第一步解决方式。12#### 2 第一步解决第一步解决方式是本地装两个nodejs版本，目录结构是这样：
-
-nodejsv6.9.1v5.12.0123可是在安装5">
+  <meta name="description" content="1 问题描述在使用hexo搭建博客系统时，在执行hexo new “hello”命令时，报错，错误信息是：12re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
+google发">
 <meta property="og:type" content="article">
 <meta property="og:title" content="windows中多版本的nodejs">
 <meta property="og:url" content="https://qingfengmy.github.io/2016/11/30/windows中多版本的nodejs/index.html">
 <meta property="og:site_name" content="清风明月">
-<meta property="og:description" content="1 问题描述在使用hexo搭建博客系统时，在执行new &quot;hello&quot;```命令时，报错，错误信息是：1```
-google发现是因为6.0的API不支持graceful-fs```，本地开发安装的nodejs版本是6.9.1。于是试着第一步解决方式。12#### 2 第一步解决第一步解决方式是本地装两个nodejs版本，目录结构是这样：
-
-nodejsv6.9.1v5.12.0123可是在安装5">
-<meta property="og:updated_time" content="2016-11-30T03:01:16.757Z">
+<meta property="og:description" content="1 问题描述在使用hexo搭建博客系统时，在执行hexo new “hello”命令时，报错，错误信息是：12re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
+google发">
+<meta property="og:updated_time" content="2016-11-30T03:41:05.373Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="windows中多版本的nodejs">
-<meta name="twitter:description" content="1 问题描述在使用hexo搭建博客系统时，在执行new &quot;hello&quot;```命令时，报错，错误信息是：1```
-google发现是因为6.0的API不支持graceful-fs```，本地开发安装的nodejs版本是6.9.1。于是试着第一步解决方式。12#### 2 第一步解决第一步解决方式是本地装两个nodejs版本，目录结构是这样：
-
-nodejsv6.9.1v5.12.0123可是在安装5">
+<meta name="twitter:description" content="1 问题描述在使用hexo搭建博客系统时，在执行hexo new “hello”命令时，报错，错误信息是：12re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
+google发">
   
   
     <link rel="icon" href="/favicon.png">
@@ -158,17 +152,23 @@ nodejsv6.9.1v5.12.0123可是在安装5">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1 问题描述"></a>1 问题描述</h4><p>在使用hexo搭建博客系统时，在执行<figure class="highlight plain"><figcaption><span>new "hello"```命令时，报错，错误信息是：</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">```</div></pre></td></tr></table></figure></p>
-<p>google发现是因为<figure class="highlight plain"><figcaption><span>6.0的API不支持graceful-fs```，本地开发安装的nodejs版本是6.9.1。于是试着第一步解决方式。</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#### 2 第一步解决</div><div class="line">第一步解决方式是本地装两个nodejs版本，目录结构是这样：</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>nodejs<br>v6.9.1<br>v5.12.0<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">可是在安装5.12.0时，提示本地已经有更高版本的nodejs，安装进程退出。</div><div class="line">#### 3 第二步解决</div><div class="line">于是google，考虑多版本nodejs的解决方式。一般有两种</div></pre></td></tr></table></figure></p>
-<p>n  express的作者开发的， 安装需要npm install n -g<br>nvm 独立的程序，和npm没有关系<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">但是在windows上就没有选择哪个这种幸福的烦恼了。```n```不支持windows系统；```nvm```也不支持windows系统，只是在windows系统上有个参照```nvm```实现的工具```nvm-windows```，命令和```nvm```的用法一样，于是选择```nvm-windows```。</div><div class="line"></div><div class="line">官网地址：https://github.com/coreybutler/nvm-windows</div><div class="line"></div><div class="line">windows上还有其他实现，nvmwm gnvm等，坑较多，弃。</div><div class="line">#### 4 坑</div><div class="line">截至写作时间，```nvm-windows```的最新版本是1.1.1，但下载较慢，经常失败。于是下载了1.1.0版本，很快下载完，但1.1.0的版本的好多坑在1.1.1的版本已经修复了，于是不明真相的我在坑中挣扎了很久，终于大悟，于是下载1.1.1的版本安装。</div><div class="line"></div><div class="line">***注意：一定要看版本间差异，尽量选择高版本***</div><div class="line"></div><div class="line">安装```nvm-windows```之前一定要把你本地的nodejs卸载掉，否则```nvm-windows```在切换nodejs版本时，总是切换失败。</div><div class="line"></div><div class="line">而切换失败的问题还可能的原因是```root```和```path```的路径中含有空格或者其他特殊字符。于是目录如下：</div></pre></td></tr></table></figure></p>
-<p>C<br>public<br>nvm_window<br>root<br>path<br>svn<br>python<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">刚安装完成```nvm-window```时，第一次运行```nvm -v```会提示错误：</div></pre></td></tr></table></figure></p>
-</blockquote>
-<p>ERROR open \settings.txt<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">这就需要把```nvm-window```安装路径中的setting.txt文件拷贝到C盘根目录下。</div><div class="line"></div><div class="line">nvm-windows安装nodejs，默认会从nodejs.org官网下载，由于国内环境，需要配置淘宝镜像，配置方法是在setting.txt文件中增加或修改：</div></pre></td></tr></table></figure></p>
-<p>node_mirror: <a href="https://npm.taobao.org/mirrors/node/" target="_blank" rel="external">https://npm.taobao.org/mirrors/node/</a><br>npm_mirror: <a href="https://npm.taobao.org/mirrors/npm/" target="_blank" rel="external">https://npm.taobao.org/mirrors/npm/</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">***注意修改的是C盘根目录的setting.txt***</div><div class="line"></div><div class="line">#### 5 基本用法</div></pre></td></tr></table></figure></p>
-<p>nvm install 5.0.0<br>nvm uninstall 4.2.2<br>nvm use 4.2.2<br>nvm list<br>```</p>
-
+        <h4 id="1-问题描述"><a href="#1-问题描述" class="headerlink" title="1 问题描述"></a>1 问题描述</h4><p>在使用hexo搭建博客系统时，在执行<strong><em>hexo new “hello”</em></strong>命令时，报错，错误信息是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">re-evaluating native module sources is not supported. </div><div class="line">If you are using the graceful-fs module, please update it to a more recent version.</div></pre></td></tr></table></figure></p>
+<p>google发现是因为<strong><em>node.js 6.0的API不支持graceful-fs</em></strong>，本地开发安装的nodejs版本是6.9.1。于是试着第一步解决方式。</p>
+<h4 id="2-第一步解决"><a href="#2-第一步解决" class="headerlink" title="2 第一步解决"></a>2 第一步解决</h4><p>第一步解决方式是本地装两个nodejs版本，目录结构是这样：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&gt;nodejs</div><div class="line">    &gt;v6.9.1</div><div class="line">    &gt;v5.12.0</div></pre></td></tr></table></figure></p>
+<p>可是在安装5.12.0时，提示本地已经有更高版本的nodejs，安装进程退出。</p>
+<h4 id="3-第二步解决"><a href="#3-第二步解决" class="headerlink" title="3 第二步解决"></a>3 第二步解决</h4><p>于是google，考虑多版本nodejs的解决方式。一般有两种<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">&gt; n  express的作者开发的， 安装需要npm install n -g </div><div class="line">&gt; nvm 独立的程序，和npm没有关系</div></pre></td></tr></table></figure></p>
+<p>但是在windows上就没有选择哪个这种幸福的烦恼了。<strong><em>n</em></strong>不支持windows系统；<strong><em>nvm</em></strong>也不支持windows系统，只是在windows系统上有个参照<strong><em>nvm</em></strong>实现的工具<strong><em>nvm-windows</em></strong>，命令和<strong><em>nvm</em></strong>的用法一样，于是选择<strong><em>nvm-windows</em></strong>。</p>
+<p>官网地址：<a href="https://github.com/coreybutler/nvm-windows" target="_blank" rel="external">https://github.com/coreybutler/nvm-windows</a></p>
+<p>windows上还有其他实现，nvmwm gnvm等，坑较多，弃。</p>
+<h4 id="4-坑"><a href="#4-坑" class="headerlink" title="4 坑"></a>4 坑</h4><p>截至写作时间，<strong><em>nvm-windows</em></strong>的最新版本是1.1.1，但下载较慢，经常失败。于是下载了1.1.0版本，很快下载完，但1.1.0的版本的好多坑在1.1.1的版本已经修复了，于是不明真相的我在坑中挣扎了很久，终于大悟，于是下载1.1.1的版本安装。</p>
+<p><strong><em>注意：一定要看版本间差异，尽量选择高版本</em></strong></p>
+<p>安装<strong><em>nvm-windows</em></strong>之前一定要把你本地的nodejs卸载掉，否则<strong><em>nvm-windows</em></strong>在切换nodejs版本时，总是切换失败。</p>
+<p>而切换失败的问题还可能的原因是<strong><em>root</em></strong>和<strong><em>path</em></strong>的路径中含有空格或者其他特殊字符。于是目录如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&gt;C </div><div class="line">    &gt;public</div><div class="line">        &gt;nvm_window</div><div class="line">            &gt;root</div><div class="line">            &gt;path</div><div class="line">        &gt;svn</div><div class="line">        &gt;python</div></pre></td></tr></table></figure></p>
+<p>刚安装完成<strong><em>nvm-window</em></strong>时，第一次运行<strong><em>nvm -v</em></strong>会提示错误：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">ERROR open \settings.txt</div></pre></td></tr></table></figure></p>
+<p>这就需要把<strong><em>nvm-window</em></strong>安装路径中的setting.txt文件拷贝到C盘根目录下。</p>
+<p>nvm-windows安装nodejs，默认会从nodejs.org官网下载，由于国内环境，需要配置淘宝镜像，配置方法是在setting.txt文件中增加或修改：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">node_mirror: https://npm.taobao.org/mirrors/node/</div><div class="line">npm_mirror: https://npm.taobao.org/mirrors/npm/</div></pre></td></tr></table></figure></p>
+<p><strong><em>注意修改的是C盘根目录的setting.txt</em></strong></p>
+<h4 id="5-基本用法"><a href="#5-基本用法" class="headerlink" title="5 基本用法"></a>5 基本用法</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">nvm install 5.0.0</div><div class="line">nvm uninstall 4.2.2</div><div class="line">nvm use 4.2.2</div><div class="line">nvm list</div></pre></td></tr></table></figure>
       
 
       

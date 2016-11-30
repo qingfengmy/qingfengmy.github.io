@@ -8,22 +8,25 @@
   <link rel="dns-prefetch" href="https://qingfengmy.github.io">
   <title>调试手机端的微信页面 | 清风明月</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用12#### 3.1 安装 Weinre是基于nodejs实现的
-npm -g install weinre1#### 3.2 运行
-weinre1像上面这样虽然启动成功了，但是默认boundHost为localhost，只能本地PC上用http://localho-s">
+  <meta name="description" content="手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用weinre：官方网址。它可以让我们在电脑上直接调试运行在手机上的远程页面。
+3.1 安装 Weinre是基于nodejs实现的1npm -g install weinre
+3.2 运行1weinre
+像上面这样虽然启动成功了，但是默认boundHost为localho">
 <meta property="og:type" content="article">
 <meta property="og:title" content="调试手机端的微信页面">
 <meta property="og:url" content="https://qingfengmy.github.io/2016/11/30/调试手机端的微信页面/index.html">
 <meta property="og:site_name" content="清风明月">
-<meta property="og:description" content="手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用12#### 3.1 安装 Weinre是基于nodejs实现的
-npm -g install weinre1#### 3.2 运行
-weinre1像上面这样虽然启动成功了，但是默认boundHost为localhost，只能本地PC上用http://localho-s">
-<meta property="og:updated_time" content="2016-11-30T03:02:47.397Z">
+<meta property="og:description" content="手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用weinre：官方网址。它可以让我们在电脑上直接调试运行在手机上的远程页面。
+3.1 安装 Weinre是基于nodejs实现的1npm -g install weinre
+3.2 运行1weinre
+像上面这样虽然启动成功了，但是默认boundHost为localho">
+<meta property="og:updated_time" content="2016-11-30T03:41:59.972Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="调试手机端的微信页面">
-<meta name="twitter:description" content="手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用12#### 3.1 安装 Weinre是基于nodejs实现的
-npm -g install weinre1#### 3.2 运行
-weinre1像上面这样虽然启动成功了，但是默认boundHost为localhost，只能本地PC上用http://localho-s">
+<meta name="twitter:description" content="手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用weinre：官方网址。它可以让我们在电脑上直接调试运行在手机上的远程页面。
+3.1 安装 Weinre是基于nodejs实现的1npm -g install weinre
+3.2 运行1weinre
+像上面这样虽然启动成功了，但是默认boundHost为localho">
   
   
     <link rel="icon" href="/favicon.png">
@@ -155,12 +158,12 @@ weinre1像上面这样虽然启动成功了，但是默认boundHost为localhost�
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">#### 3.1 安装</div><div class="line"> Weinre是基于nodejs实现的</div></pre></td></tr></table></figure></p>
-<p>npm -g install weinre<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">#### 3.2 运行</div></pre></td></tr></table></figure></p>
-<p>weinre<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">像上面这样虽然启动成功了，但是默认boundHost为localhost，只能本地PC上用http://localho-st:8080来访问，将localhost换做本地ip就无法打开Weinre调试工具，为了能在其他设备以及本地设备用ip打开Weinre调试工具，我们还需要设置boundHost为&quot;-all-&quot;，如下：</div></pre></td></tr></table></figure></p>
-<p>weinre –boundHost -all-<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">执行完上面的命令，在浏览器地址栏中输入下面的网址打开Weinre调试工具。在页面中，有两部分是我们要使用的，第一部分是```Access Points```，其中</div></pre></td></tr></table></figure></p>
-<p>debug client user interface```是调试入口，可以通过这个地址进入Debug Client。</p>
-<p>第二个部分是<code>Target Script</code>，如下图，这个地址是系统根据我们启动Weinre服务时的参数设置生成的target-script.js文件的链接地址。我们需要将这个js文件嵌入到待测试的页面中。</p>
+        <p>手机端的微信无法像PC端浏览器那样去调试页面，但有时候PC上页面没问题，手机上就有问题，这时候我们就需要调试手机端的页面。这里使用<strong><em>weinre</em></strong>：<a href="https://github.com/nupthale/weinre" target="_blank" rel="external">官方网址</a>。它可以让我们在电脑上直接调试运行在手机上的远程页面。</p>
+<h4 id="3-1-安装"><a href="#3-1-安装" class="headerlink" title="3.1 安装"></a>3.1 安装</h4><p> Weinre是基于nodejs实现的<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm -g install weinre</div></pre></td></tr></table></figure></p>
+<h4 id="3-2-运行"><a href="#3-2-运行" class="headerlink" title="3.2 运行"></a>3.2 运行</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">weinre</div></pre></td></tr></table></figure>
+<p>像上面这样虽然启动成功了，但是默认boundHost为localhost，只能本地PC上用<strong><em><a href="http://localho-st:8080" target="_blank" rel="external">http://localho-st:8080</a></em></strong> 来访问，将localhost换做本地ip就无法打开Weinre调试工具，为了能在其他设备以及本地设备用ip打开Weinre调试工具，我们还需要设置boundHost为”-all-“，如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">weinre --boundHost -all-</div></pre></td></tr></table></figure></p>
+<p>执行完上面的命令，在浏览器地址栏中输入下面的网址打开Weinre调试工具。在页面中，有两部分是我们要使用的，第一部分是<strong><em>Access Points</em></strong>，其中<strong><em><br>debug client user interface</em></strong>是调试入口，可以通过这个地址进入Debug Client。</p>
+<p>第二个部分是<strong><em>Target Script</em></strong>，如下图，这个地址是系统根据我们启动Weinre服务时的参数设置生成的target-script.js文件的链接地址。我们需要将这个js文件嵌入到待测试的页面中。</p>
 
       
 
