@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="https://qingfengmy.github.io">
   <title>纯 CSS 实现高度与宽度成比例的效果 | 清风明月</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="123456789101112131415HTML:&amp;lt;p class=&amp;quot;image-container&amp;quot;&amp;gt;  &amp;lt;img src=&amp;quot;xxx.png&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;CSS:p.image-container &amp;#123;  width: 100%;  height: 0;  padding-bottom: 60%; // 宽高比是">
+  <meta name="description" content="123456789101112131415HTML:&amp;lt;p class=&amp;quot;image-container&amp;quot;&amp;gt;  &amp;lt;img src=&amp;quot;xxx.png&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;CSS:p.image-container {  width: 100%;  height: 0;  padding-bottom: 60%; // &amp;#x5BBD;&amp;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="纯 CSS 实现高度与宽度成比例的效果">
 <meta property="og:url" content="https://qingfengmy.github.io/2016/11/29/纯-CSS-实现高度与宽度成比例的效果/index.html">
 <meta property="og:site_name" content="清风明月">
-<meta property="og:description" content="123456789101112131415HTML:&amp;lt;p class=&amp;quot;image-container&amp;quot;&amp;gt;  &amp;lt;img src=&amp;quot;xxx.png&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;CSS:p.image-container &amp;#123;  width: 100%;  height: 0;  padding-bottom: 60%; // 宽高比是">
+<meta property="og:description" content="123456789101112131415HTML:&amp;lt;p class=&amp;quot;image-container&amp;quot;&amp;gt;  &amp;lt;img src=&amp;quot;xxx.png&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;CSS:p.image-container {  width: 100%;  height: 0;  padding-bottom: 60%; // &amp;#x5BBD;&amp;">
 <meta property="og:updated_time" content="2016-11-30T01:52:27.267Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="纯 CSS 实现高度与宽度成比例的效果">
-<meta name="twitter:description" content="123456789101112131415HTML:&amp;lt;p class=&amp;quot;image-container&amp;quot;&amp;gt;  &amp;lt;img src=&amp;quot;xxx.png&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;CSS:p.image-container &amp;#123;  width: 100%;  height: 0;  padding-bottom: 60%; // 宽高比是">
+<meta name="twitter:description" content="123456789101112131415HTML:&amp;lt;p class=&amp;quot;image-container&amp;quot;&amp;gt;  &amp;lt;img src=&amp;quot;xxx.png&amp;quot;&amp;gt;&amp;lt;/p&amp;gt;CSS:p.image-container {  width: 100%;  height: 0;  padding-bottom: 60%; // &amp;#x5BBD;&amp;">
   
   
     <link rel="icon" href="/favicon.png">
@@ -149,7 +149,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">HTML:</div><div class="line">&lt;p class=&quot;image-container&quot;&gt;</div><div class="line">  &lt;img src=&quot;xxx.png&quot;&gt;</div><div class="line">&lt;/p&gt;</div><div class="line">CSS:</div><div class="line">p.image-container &#123;</div><div class="line">  width: 100%;</div><div class="line">  height: 0;</div><div class="line">  padding-bottom: 60%; // 宽高比是10：6</div><div class="line">  overflow: hidden;</div><div class="line">&#125;</div><div class="line"></div><div class="line">p.image-container img &#123;</div><div class="line">  width: 100%;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">HTML:</div><div class="line">&lt;p class=&quot;image-container&quot;&gt;</div><div class="line">  &lt;img src=&quot;xxx.png&quot;&gt;</div><div class="line">&lt;/p&gt;</div><div class="line">CSS:</div><div class="line">p.image-container {</div><div class="line">  width: 100%;</div><div class="line">  height: 0;</div><div class="line">  padding-bottom: 60%; // &#x5BBD;&#x9AD8;&#x6BD4;&#x662F;10&#xFF1A;6</div><div class="line">  overflow: hidden;</div><div class="line">}</div><div class="line"></div><div class="line">p.image-container img {</div><div class="line">  width: 100%;</div><div class="line">}</div></pre></td></tr></table></figure>
       
 
       
@@ -257,7 +257,7 @@
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/nexus5/" style="font-size: 10px;">nexus5</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/reactjs/" style="font-size: 10px;">reactjs</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+    				<a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/nexus5/" style="font-size: 10px;">nexus5</a> <a href="/tags/nodejs/" style="font-size: 10px;">nodejs</a> <a href="/tags/reactjs/" style="font-size: 10px;">reactjs</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
     			</div>
     	</section>
     
