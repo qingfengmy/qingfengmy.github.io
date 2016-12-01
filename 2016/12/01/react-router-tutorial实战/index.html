@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+  <link rel="dns-prefetch" href="https://qingfengmy.github.io">
+  <title>react-router-tutorial实战 | 清风明月</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="&amp;#x672C;&amp;#x6587;&amp;#x662F;&amp;#x5BF9;react-router-tutorial&amp;#x7684;&amp;#x5B9E;&amp;#x8DF5;&amp;#x7BC7;&amp;#x3002;
+1 setting-up123456789101112// packages.json&amp;quot;scripts&amp;quot;: {    &amp;quot;start&amp;quot;: &amp;quot;webpack-dev-">
+<meta property="og:type" content="article">
+<meta property="og:title" content="react-router-tutorial实战">
+<meta property="og:url" content="https://qingfengmy.github.io/2016/12/01/react-router-tutorial实战/index.html">
+<meta property="og:site_name" content="清风明月">
+<meta property="og:description" content="&amp;#x672C;&amp;#x6587;&amp;#x662F;&amp;#x5BF9;react-router-tutorial&amp;#x7684;&amp;#x5B9E;&amp;#x8DF5;&amp;#x7BC7;&amp;#x3002;
+1 setting-up123456789101112// packages.json&amp;quot;scripts&amp;quot;: {    &amp;quot;start&amp;quot;: &amp;quot;webpack-dev-">
+<meta property="og:updated_time" content="2016-12-01T02:17:45.807Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="react-router-tutorial实战">
+<meta name="twitter:description" content="&amp;#x672C;&amp;#x6587;&amp;#x662F;&amp;#x5BF9;react-router-tutorial&amp;#x7684;&amp;#x5B9E;&amp;#x8DF5;&amp;#x7BC7;&amp;#x3002;
+1 setting-up123456789101112// packages.json&amp;quot;scripts&amp;quot;: {    &amp;quot;start&amp;quot;: &amp;quot;webpack-dev-">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/main.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+      <div class="overlay">
+	
+	  <div align="left">
+	<a href="http://www.amazingcounters.com"  style="color:#FFFFFF;font-size:60%; vertical-align: bottom;">
+		您是第
+		<img 
+		border="0" 
+		src="http://cc.amazingcounters.com/counter.php?i=3209866&c=9629911" 
+		alt="AmazingCounters.com" 
+		style="height: 16px">
+		位访客
+	</a>
+</div>
+	
+</div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img src="http://tva2.sinaimg.cn/crop.0.0.512.512.180/67333864jw8eo1vias9chj20e80e8417.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">qingfengmy</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">心有猛虎，细嗅蔷薇</p>
+		
+
+		<nav class="header-menu">
+			<ul>
+			
+				<li><a href="/">主页</a></li>
+	        
+			</ul>
+		</nav>
+		<nav class="header-smart-menu">
+	        
+    		
+    			
+    			<a class="js-smart-menu" data-idx="0" href="javascript:void(0)">所有文章</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="1" href="javascript:void(0)">标签</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="2" href="javascript:void(0)">友链</a>
+    			
+    			
+            
+    			
+    			<a class="js-smart-menu" data-idx="3" href="javascript:void(0)">关于我</a>
+    			
+    			
+            
+		</nav>
+		<nav class="header-nav">
+			<div class="social">
+				
+					<a class="github" target="_blank" href="https://github.com/qingfengmy" title="github"><i class="icon-github"></i></a>
+		        
+					<a class="weibo" target="_blank" href="http://weibo.com/u/1731410020" title="weibo"><i class="icon-weibo"></i></a>
+		        
+			</div>
+		</nav>
+	</header>		
+</div>
+
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"><i class="icon-sort"></i></div>
+  		<h1 class="header-author js-mobile-header hide">qingfengmy</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				
+					<img src="http://tva2.sinaimg.cn/crop.0.0.512.512.180/67333864jw8eo1vias9chj20e80e8417.jpg" class="js-avatar">
+				
+			</div>
+			<hgroup>
+			  <h1 class="header-author">qingfengmy</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">心有猛虎，细嗅蔷薇</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/qingfengmy" title="github"><i class="icon-github"></i></a>
+			        
+						<a class="weibo" target="_blank" href="http://weibo.com/u/1731410020" title="weibo"><i class="icon-weibo"></i></a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+
+      <div class="body-wrap">
+        <article id="post-react-router-tutorial实战" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      react-router-tutorial实战
+    </h1>
+  
+
+        <a href="/2016/12/01/react-router-tutorial实战/" class="archive-article-date">
+  	<time datetime="2016-12-01T01:33:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-01</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#x672C;&#x6587;&#x662F;&#x5BF9;<a href="https://github.com/reactjs/react-router-tutorial" target="_blank" rel="external">react-router-tutorial</a>&#x7684;&#x5B9E;&#x8DF5;&#x7BC7;&#x3002;</p>
+<h3 id="1-setting-up"><a href="#1-setting-up" class="headerlink" title="1 setting-up"></a>1 setting-up</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">// packages.json</div><div class="line">&quot;scripts&quot;: {</div><div class="line">    &quot;start&quot;: &quot;webpack-dev-server --inline --content-base .&quot;</div><div class="line">}</div><div class="line">// webpack.config.js</div><div class="line">entry: &apos;./index.js&apos;,</div><div class="line">output: {</div><div class="line">    filename: &apos;bundle.js&apos;,</div><div class="line">    publicPath: &apos;&apos;</div><div class="line">},</div><div class="line">// index.html</div><div class="line">&lt;script src=&quot;bundlebundle.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure>
+<p>&#x6267;&#x884C;&#x5B8C;<strong><em>npm start</em></strong>&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x6210;&#x529F;&#x8BBF;&#x95EE;&#x9875;&#x9762;&#xFF0C;&#x4F46;&#x6CA1;&#x6709;&#x627E;&#x5230;bundle.js&#x6587;&#x4EF6;&#xFF0C;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;bundle.js&#x662F;&#x653E;&#x5728;memory&#x4E2D;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x65E0;&#x6CD5;&#x5728;disk&#x4E0A;&#x627E;&#x5230;&#x3002;</p>
+<p>&#x4FEE;&#x6539;publicPath<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">// webpack.config.js</div><div class="line">output: {</div><div class="line">    filename: &apos;bundle.js&apos;,</div><div class="line">    publicPath: &apos;public/&apos; //&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;public&#x540E;&#x9762;&#x5FC5;&#x987B;&#x6709;&apos;/&apos;&#xFF0C;&#x5426;&#x5219;&#x627E;&#x4E0D;&#x5230;bundle.js</div><div class="line">}</div><div class="line">// index.html</div><div class="line">&lt;script src=&quot;public/bundle.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="2-rendering-a-route"><a href="#2-rendering-a-route" class="headerlink" title="2 rendering-a-route"></a>2 rendering-a-route</h3><p>&#x57FA;&#x672C;route&#x7528;&#x6CD5;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">// index.js</div><div class="line">render((</div><div class="line">  &lt;Router history={hashHistory}&gt;</div><div class="line">    &lt;Route path=&quot;/&quot; component={App}/&gt;</div><div class="line">    {/* add the routes here */}</div><div class="line">    &lt;Route path=&quot;/repos&quot; component={Repos}/&gt;</div><div class="line">    &lt;Route path=&quot;/about&quot; component={About}/&gt;</div><div class="line">  &lt;/Router&gt;</div><div class="line">), document.getElementById(&apos;app&apos;))</div></pre></td></tr></table></figure></p>
+<p>&#x8FD9;&#x91CC;&#x91CD;&#x70B9;&#x8BB2;&#x4E00;&#x4E0B;<strong><em>webpack-dev-server &#x2013;inline &#x2013;content-base .</em></strong>&#x7684;&#x5404;&#x4E2A;&#x53C2;&#x6570;&#x542B;&#x4E49;&#x3002;</p>
+<p><strong><em>&#x2013;inline</em></strong>: webpack-dev-server&#x6A21;&#x5F0F;&#x5206;&#x4E3A;iframe&#x6A21;&#x5F0F;&#x548C;inline&#x6A21;&#x5F0F;&#xFF0C;iframe&#x6A21;&#x5F0F;&#x7565;&#xFF0C;inline&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;&#x5728;&#x9875;&#x9762;&#x5F15;&#x7528;&#x751F;&#x6210;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5982;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;http://localhost:8080/app.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p>&#x4E00;&#x822C;index.html&#x4E2D;&#x5199;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p><strong><em>&#x2013;content-base .</em></strong>:&#x6CE8;&#x610F;&#x540E;&#x9762;&#x6709;&#x4E2A;<strong><em>.</em></strong>&#xFF0C;<strong><em>.</em></strong>&#x8868;&#x793A;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#xFF0C;Relative directory for base of server&#xFF1B;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6839;&#x76EE;&#x5F55;&#x3002;&#x5982;&#x5F53;&#x524D;&#x8DEF;&#x5F84;&#x4E0B;&#x6709;node_modules&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x6211;&#x5728;&#x6D4F;&#x89C8;&#x5668;&#x5730;&#x5740;&#x680F;&#x4E2D;&#x8F93;&#x5165;<a href="http://localhost:8080/node_modules&#x5C31;&#x53EF;&#x4EE5;&#x6D4F;&#x89C8;node_modules&#x76EE;&#x5F55;&#x3002;" target="_blank" rel="external">http://localhost:8080/node_modules&#x5C31;&#x53EF;&#x4EE5;&#x6D4F;&#x89C8;node_modules&#x76EE;&#x5F55;&#x3002;</a></p>
+<h3 id="3-Navigating-with-LinkLink"><a href="#3-Navigating-with-LinkLink" class="headerlink" title="3 Navigating with LinkLink"></a>3 Navigating with LinkLink</h3><p>&#x5BFC;&#x822A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Link to=&quot;/repos&quot;&gt;Repos&lt;/Link&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="4-Nested-Routes"><a href="#4-Nested-Routes" class="headerlink" title="4 Nested Routes"></a>4 Nested Routes</h3><p>&#x5D4C;&#x5957;&#x8DEF;&#x7531;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">// Nested UI and Nested URLs</div><div class="line">&lt;App&gt;       {/*  /          */}</div><div class="line">  &lt;Repos&gt;   {/*  /repos     */}</div><div class="line">    &lt;Repo/&gt; {/*  /repos/123 */}</div><div class="line">  &lt;/Repos&gt;</div><div class="line">&lt;/App&gt;</div><div class="line">// index.js</div><div class="line">render((</div><div class="line">  &lt;Router history={hashHistory}&gt;</div><div class="line">    &lt;Route path=&quot;/&quot; component={App}&gt;</div><div class="line">      &lt;Route path=&quot;/repos&quot; component={Repos}&gt;</div><div class="line">        &lt;Route path=&quot;/repos/:id&quot; component={Repo}/&gt;</div><div class="line">      &lt;/Route&gt;</div><div class="line">    &lt;/Route&gt;</div><div class="line">  &lt;/Router&gt;</div><div class="line">), document.getElementById(&apos;app&apos;))</div></pre></td></tr></table></figure></p>
+<h3 id="5-Active-Links"><a href="#5-Active-Links" class="headerlink" title="5 Active Links"></a>5 Active Links</h3><p>&#x5B9E;&#x73B0;&#x5F53;&#x524D;Link&#x9AD8;&#x4EAE;&#x7684;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;</p>
+<p>&#x65B9;&#x5F0F;1&#xFF1A;activeStyle<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;li&gt;&lt;Link to=&quot;/about&quot; activeStyle={{ color: &apos;red&apos; }}&gt;About&lt;/Link&gt;&lt;/li&gt;</div></pre></td></tr></table></figure></p>
+<p>&#x65B9;&#x5F0F;2&#xFF1A;activeClassName<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Link to=&quot;/about&quot; activeClassName=&quot;active&quot;&gt;About&lt;/Link&gt;</div></pre></td></tr></table></figure></p>
+<p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x5C01;&#x88C5;Link<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">// modules/NavLink.js</div><div class="line">import React from &apos;react&apos;</div><div class="line">import { Link } from &apos;react-router&apos;</div><div class="line"></div><div class="line">export default React.createClass({</div><div class="line">  render() {</div><div class="line">    return &lt;Link {...this.props} activeClassName=&quot;active&quot;/&gt;</div><div class="line">  }</div><div class="line">})</div></pre></td></tr></table></figure></p>
+<p>&#x7528;&#x7684;&#x65F6;&#x5019;&#x5C31;&#x5F88;&#x65B9;&#x4FBF;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;NavLink to=&quot;/about&quot;&gt;About&lt;/NavLink&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="6-URL-Params"><a href="#6-URL-Params" class="headerlink" title="6 URL Params"></a>6 URL Params</h3><p>&#x8DEF;&#x7531;&#x4F20;&#x503C;&#xFF0C;&#x8DEF;&#x7531;&#x5B9A;&#x4E49;&#x5982;&#x4E0B;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">/repos/:userName/:repoName</div></pre></td></tr></table></figure></p>
+<p>&#x5F53;&#x8DEF;&#x7531;&#x5730;&#x5740;&#x4E3A;/repos/reactjs/react-router&#x65F6;&#xFF0C;userName=reactjs;repoName=router&#x3002; </p>
+<p>&#x5F53;&#x8DEF;&#x7531;&#x5730;&#x5740;&#x4E3A;/repos/facebook/react&#x65F6;&#xFF0C;userName=facebook;repoName=react&#x3002;</p>
+<h3 id="7-More-Nesting"><a href="#7-More-Nesting" class="headerlink" title="7 More Nesting"></a>7 More Nesting</h3><p>&#x66F4;&#x591A;&#x7684;&#x5D4C;&#x5957;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">&lt;Router history={hashHistory}&gt;</div><div class="line">    &lt;Route path=&quot;/&quot; component={App}&gt;</div><div class="line">      &lt;Route path=&quot;/repos&quot; component={Repos}&gt;</div><div class="line">        &lt;Route path=&quot;/repos/:userName/:repoName&quot; component={Repo}/&gt;</div><div class="line">      &lt;/Route&gt;</div><div class="line">      &lt;Route path=&quot;/about&quot; component={About}/&gt;</div><div class="line">    &lt;/Route&gt;</div><div class="line">&lt;/Router&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="8-Index-Routes"><a href="#8-Index-Routes" class="headerlink" title="8 Index Routes"></a>8 Index Routes</h3><p>&#x4E3B;&#x9875;&#x8DEF;&#x7531;&#xFF0C;&#x6CA1;&#x6709;path&#x5C5E;&#x6027;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">&lt;Router history={hashHistory}&gt;</div><div class="line">    &lt;Route path=&quot;/&quot; component={App}&gt;</div><div class="line">      &lt;IndexRoute component={Home}/&gt;</div><div class="line">      &lt;Route path=&quot;/repos&quot; component={Repos}&gt;</div><div class="line">        &lt;Route path=&quot;/repos/:userName/:repoName&quot; component={Repo}/&gt;</div><div class="line">      &lt;/Route&gt;</div><div class="line">      &lt;Route path=&quot;/about&quot; component={About}/&gt;</div><div class="line">    &lt;/Route&gt;</div><div class="line"> &lt;/Router&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="9-Index-Links"><a href="#9-Index-Links" class="headerlink" title="9 Index Links"></a>9 Index Links</h3><p>&#x5982;&#x679C;&#x4F7F;&#x7528;&#x666E;&#x901A;&#x7684;Link&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">&lt;li&gt;&lt;NavLink to=&quot;/&quot;&gt;Home&lt;/NavLink&gt;&lt;/li&gt;</div><div class="line">&lt;li&gt;&lt;NavLink to=&quot;/about&quot;&gt;About&lt;/NavLink&gt;&lt;/li&gt;</div><div class="line">&lt;li&gt;&lt;NavLink to=&quot;/repos&quot;&gt;Repos&lt;/NavLink&gt;&lt;/li&gt;</div></pre></td></tr></table></figure></p>
+<p>&#x5F53;&#x8BBF;&#x95EE;<strong><em><a href="http://localhost:8080/#/repos" target="_blank" rel="external">http://localhost:8080/#/repos</a> </em></strong>&#x65F6;&#xFF0C;&#x540C;&#x65F6;&#x6EE1;&#x8DB3;Home&#x548C;Repos&#xFF0C;&#x6240;&#x4EE5;&#x4E24;&#x4E2A;Link&#x90FD;&#x4F1A;&#x9AD8;&#x4EAE;&#x3002;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x5F0F;&#x3002;</p>
+<p>&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;IndexLink<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;li&gt;&lt;IndexLink to=&quot;/&quot; activeClassName=&quot;active&quot;&gt;Home&lt;/IndexLink&gt;&lt;/li&gt;</div></pre></td></tr></table></figure></p>
+<p>&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;onlyActiveOnIndex<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;li&gt;&lt;Link to=&quot;/&quot; activeClassName=&quot;active&quot; onlyActiveOnIndex={true}&gt;Home&lt;/Link&gt;&lt;/li&gt;</div></pre></td></tr></table></figure></p>
+<h3 id="10-Clean-URLs-with-Browser"><a href="#10-Clean-URLs-with-Browser" class="headerlink" title="10 Clean URLs with Browser"></a>10 Clean URLs with Browser</h3><p>History&#x5229;&#x7528;BrowserHistory&#x5B9E;&#x73B0;&#x6E05;&#x723D;&#x5E72;&#x51C0;&#x7684;Url&#x3002;&#x9996;&#x5148;&#x4FEE;&#x6539;&#x8DEF;&#x7531;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">import { Router, Route, browserHistory, IndexRoute } from &apos;react-router&apos;</div><div class="line">render((</div><div class="line">  &lt;Router history={browserHistory}&gt;</div><div class="line">    {/* ... */}</div><div class="line">  &lt;/Router&gt;</div><div class="line">), document.getElementById(&apos;app&apos;))</div></pre></td></tr></table></figure></p>
+<p>&#x8FD9;&#x65F6;&#xFF0C;&#x4ECE;&#x9875;&#x9762;&#x7684;Link&#x8BBF;&#x95EE;&#x5404;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x662F;&#x6B63;&#x5E38;&#x7684;&#x5982;<strong><em><a href="http://localhost:8080/repos" target="_blank" rel="external">http://localhost:8080/repos</a> </em></strong>&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x76F4;&#x63A5;&#x5728;&#x5730;&#x5740;&#x680F;&#x8BBF;&#x95EE;&#x8BE5;&#x5730;&#x5740;&#xFF0C;&#x5C31;&#x4F1A;&#x62A5;404&#x9519;&#x8BEF;&#x3002;&#x89E3;&#x51B3;&#x65B9;&#x5F0F;&#x662F;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&quot;start&quot;: &quot;webpack-dev-server --inline --content-base . --history-api-fallback&quot;</div></pre></td></tr></table></figure></p>
+<p>&#x610F;&#x601D;&#x662F;&#xFF1A;url&#x90FD;&#x662F;&#x5F53;&#x524D;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x8DEF;&#x7531;&#x5904;&#x7406;&#x7684;&#xFF0C;&#x800C;&#x76F4;&#x63A5;&#x6765;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684;url&#x65F6;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x4E0D;&#x77E5;&#x9053;&#x600E;&#x4E48;&#x5904;&#x7406;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x52A0;history-api-fallback&#x3002;&#x540C;&#x65F6;&#xFF0C;index.html&#x4E2D;&#x7684;&#x8D44;&#x6E90;&#x5F15;&#x7528;&#x90FD;&#x8981;&#x6539;&#x6210;&#x7EDD;&#x5BF9;&#x8DEF;&#x5F84;&#xFF0C;&#x5982;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">&lt;!-- index.html --&gt;</div><div class="line">&lt;!-- index.css -&gt; /index.css --&gt;</div><div class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;/index.css&quot;&gt;</div><div class="line"></div><div class="line">&lt;!-- bundle.js -&gt; /bundle.js --&gt;</div><div class="line">&lt;script src=&quot;/bundle.js&quot;&gt;&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p>&#x4E0D;&#x6539;&#x4E5F;&#x53EF;&#x4EE5;&#xFF0C;&#x4E0D;&#x77E5;&#x4E3A;&#x4EC0;&#x4E48;&#x3002;</p>
+<h3 id="11-Production-ish-Server"><a href="#11-Production-ish-Server" class="headerlink" title="11 Production-ish Server"></a>11 Production-ish Server</h3><p>&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x7684;Server&#x3002;&#x5F00;&#x53D1;&#x6A21;&#x5F0F;&#x4E0B;&#x662F;&#x62FF;&#x4E0D;&#x5230;&#x7F16;&#x8BD1;&#x7ED3;&#x679C;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x8981;&#x642D;&#x5EFA;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x3002;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#xFF1A;</p>
+<h4 id="11-1-&#x5B89;&#x88C5;-express"><a href="#11-1-&#x5B89;&#x88C5;-express" class="headerlink" title="11.1 &#x5B89;&#x88C5; express"></a>11.1 &#x5B89;&#x88C5; express</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm install express if-env compression --save</div></pre></td></tr></table></figure>
+<h4 id="11-2-&#x4FEE;&#x6539;package-json"><a href="#11-2-&#x4FEE;&#x6539;package-json" class="headerlink" title="11.2 &#x4FEE;&#x6539;package.json"></a>11.2 &#x4FEE;&#x6539;package.json</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">&quot;scripts&quot;: {</div><div class="line">  &quot;start&quot;: &quot;if-env NODE_ENV=production &amp;&amp; npm run start:prod || npm run start:dev&quot;,</div><div class="line">  &quot;start:dev&quot;: &quot;webpack-dev-server --inline --content-base . --history-api-fallback&quot;,</div><div class="line">  &quot;start:prod&quot;: &quot;webpack &amp;&amp; node server.js&quot;</div><div class="line">}</div></pre></td></tr></table></figure>
+<p>&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4F7F;&#x7528;webpack-dev-server&#x547D;&#x4EE4;&#xFF0C;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4F7F;&#x7528;webpack &amp;&amp; node server.js&#x547D;&#x4EE4;&#x3002;</p>
+<h4 id="11-3-&#x4FEE;&#x6539;webpack-config-js&#xFF0C;&#x589E;&#x52A0;path&#x8282;&#x70B9;"><a href="#11-3-&#x4FEE;&#x6539;webpack-config-js&#xFF0C;&#x589E;&#x52A0;path&#x8282;&#x70B9;" class="headerlink" title="11.3 &#x4FEE;&#x6539;webpack.config.js&#xFF0C;&#x589E;&#x52A0;path&#x8282;&#x70B9;"></a>11.3 &#x4FEE;&#x6539;webpack.config.js&#xFF0C;&#x589E;&#x52A0;path&#x8282;&#x70B9;</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">output: {</div><div class="line">    path: &apos;public&apos;,</div><div class="line">    filename: &apos;bundle.js&apos;,</div><div class="line">    publicPath: &apos;/&apos;</div><div class="line">}</div></pre></td></tr></table></figure>
+<h4 id="11-4-&#x7F16;&#x5199;server-js"><a href="#11-4-&#x7F16;&#x5199;server-js" class="headerlink" title="11.4 &#x7F16;&#x5199;server.js"></a>11.4 &#x7F16;&#x5199;server.js</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">var express = require(&apos;express&apos;)</div><div class="line">var path = require(&apos;path&apos;)</div><div class="line"></div><div class="line">var app = express()</div><div class="line"></div><div class="line">// serve our static stuff like index.css</div><div class="line">app.use(express.static(__dirname))</div><div class="line"></div><div class="line">// send all requests to index.html so browserHistory in React Router works</div><div class="line">app.get(&apos;*&apos;, function (req, res) {</div><div class="line">  res.sendFile(path.join(__dirname, &apos;index.html&apos;))</div><div class="line">})</div><div class="line"></div><div class="line">var PORT = process.env.PORT || 8080</div><div class="line">app.listen(PORT, function() {</div><div class="line">  console.log(&apos;Production Express server running at localhost:&apos; + PORT)</div><div class="line">})</div></pre></td></tr></table></figure>
+<p>&#x6B64;&#x65F6;&#x7684;&#x95EE;&#x9898;&#x5728;&#x4E8E;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x5F00;&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x522B;&#x4EBA;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4F60;&#x7684;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x3002;</p>
+<h4 id="11-5-&#x65B0;&#x5EFA;public&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x628A;index-html&#x548C;index-css&#x79FB;&#x5230;public&#x4E2D;&#x3002;"><a href="#11-5-&#x65B0;&#x5EFA;public&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x628A;index-html&#x548C;index-css&#x79FB;&#x5230;public&#x4E2D;&#x3002;" class="headerlink" title="11.5 &#x65B0;&#x5EFA;public&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x628A;index.html&#x548C;index.css&#x79FB;&#x5230;public&#x4E2D;&#x3002;"></a>11.5 &#x65B0;&#x5EFA;public&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x5E76;&#x628A;index.html&#x548C;index.css&#x79FB;&#x5230;public&#x4E2D;&#x3002;</h4><h4 id="11-6-&#x4FEE;&#x6539;server-js"><a href="#11-6-&#x4FEE;&#x6539;server-js" class="headerlink" title="11.6 &#x4FEE;&#x6539;server.js"></a>11.6 &#x4FEE;&#x6539;server.js</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">// add path.join here</div><div class="line">app.use(express.static(path.join(__dirname, &apos;public&apos;)))</div><div class="line"></div><div class="line">// ...</div><div class="line">app.get(&apos;*&apos;, function (req, res) {</div><div class="line">  // and drop &apos;public&apos; in the middle of here</div><div class="line">  res.sendFile(path.join(__dirname, &apos;public&apos;, &apos;index.html&apos;))</div><div class="line">})</div></pre></td></tr></table></figure>
+<p>&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4FEE;&#x6539;&#x670D;&#x52A1;&#x5668;&#x7684;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x4ECE;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x6539;&#x4E3A;public&#x76EE;&#x5F55;&#x3002;</p>
+<h4 id="11-7-webpack-config-js&#x589E;&#x52A0;path&#x8282;&#x70B9;"><a href="#11-7-webpack-config-js&#x589E;&#x52A0;path&#x8282;&#x70B9;" class="headerlink" title="11.7 webpack.config.js&#x589E;&#x52A0;path&#x8282;&#x70B9;"></a>11.7 webpack.config.js&#x589E;&#x52A0;path&#x8282;&#x70B9;</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">output: {</div><div class="line">  path: &apos;public&apos;,</div><div class="line">  // ...</div><div class="line">}</div></pre></td></tr></table></figure>
+<h4 id="11-8-&#x6700;&#x540E;&#x5F00;&#x53D1;&#x7684;&#x670D;&#x52A1;&#x5668;&#x76EE;&#x5F55;&#x4E5F;&#x6539;&#x4E3A;public"><a href="#11-8-&#x6700;&#x540E;&#x5F00;&#x53D1;&#x7684;&#x670D;&#x52A1;&#x5668;&#x76EE;&#x5F55;&#x4E5F;&#x6539;&#x4E3A;public" class="headerlink" title="11.8 &#x6700;&#x540E;&#x5F00;&#x53D1;&#x7684;&#x670D;&#x52A1;&#x5668;&#x76EE;&#x5F55;&#x4E5F;&#x6539;&#x4E3A;public"></a>11.8 &#x6700;&#x540E;&#x5F00;&#x53D1;&#x7684;&#x670D;&#x52A1;&#x5668;&#x76EE;&#x5F55;&#x4E5F;&#x6539;&#x4E3A;public</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&quot;start:dev&quot;: &quot;webpack-dev-server --inline --content-base public --history-api-fallback&quot;,</div></pre></td></tr></table></figure>
+<h3 id="12-Navigating"><a href="#12-Navigating" class="headerlink" title="12 Navigating"></a>12 Navigating</h3><p>Programatically&#x52A8;&#x6001;&#x5BFC;&#x822A;&#xFF0C;Link&#x662F;&#x9759;&#x6001;&#x5BFC;&#x822A;&#xFF0C;&#x4F7F;&#x7528;&#x4EE3;&#x7801;&#x4E3B;&#x52A8;&#x8BBF;&#x95EE;&#x67D0;&#x8DEF;&#x7531;&#x662F;&#x52A8;&#x6001;&#x5BFC;&#x822A;&#x3002;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">handleSubmit(event) {</div><div class="line">    event.preventDefault()</div><div class="line">    const userName = event.target.elements[0].value</div><div class="line">    const repo = event.target.elements[1].value</div><div class="line">    const path = `/repos/${userName}/${repo}`</div><div class="line">    console.log(path)</div><div class="line">},</div></pre></td></tr></table></figure></p>
+<p>&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x6709;&#x4E24;&#x79CD;&#xFF1A;browserHistory.push&#x548C;this.context.router.push&#x3002;</p>
+<h3 id="13-Server-Rendering"><a href="#13-Server-Rendering" class="headerlink" title="13 Server Rendering"></a>13 Server Rendering</h3><p>&#x7565;</p>
+<p>&#x9879;&#x76EE;&#x5730;&#x5740;&#xFF1A;<a href="https://github.com/qingfengmy/react-router-tutorial" target="_blank" rel="external">&#x52A8;&#x6001;&#x8DEF;&#x7531;&#x548C;react-router-turorial&#x5B9E;&#x6218;</a> </p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react-router/">react-router</a></li></ul>
+	</div>
+
+      
+
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2016/12/01/require和require-ensure/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          require和require.ensure
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/12/01/动态路由/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">动态路由</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+
+
+
+
+
+
+
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2016 qingfengmy
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    <script>
+	var yiliaConfig = {
+		mathjax: false,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false,
+		root: "/",
+		innerArchive: true
+	}
+</script>
+
+<script src="/./main.js"></script>
+
+
+    
+<div class="tools-col">
+  <ul class="btn-wrap">
+    
+      <li class="chose" data-hook="tools-section-all"><span class="text">全部</span><i class="icon-book"></i></li>
+    
+    
+      <li data-hook="tools-section-tag"><span class="text">标签</span><i class="icon-price-tags"></i></li>
+    
+    
+      <li data-hook="tools-section-friends"><span class="text">友链</span><i class="icon-link"></i></li>
+    
+    
+      <li data-hook="tools-section-me"><span class="text">我</span><i class="icon-smile"></i></li>
+    
+  </ul>
+  <div class="tools-wrap">
+    
+    	<section class="tools-section tools-section-all chose">
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-tag">
+    			<div class="widget tagcloud" id="js-tagcloud">
+    				<a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/hexo/" style="font-size: 20px;">hexo</a> <a href="/tags/nexus5/" style="font-size: 10px;">nexus5</a> <a href="/tags/nodejs/" style="font-size: 20px;">nodejs</a> <a href="/tags/react-router/" style="font-size: 20px;">react-router</a> <a href="/tags/reactjs/" style="font-size: 10px;">reactjs</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+    			</div>
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-friends">
+  		
+  			<div class="friends-wrap" id="js-friends">
+  			
+  	          <a target="_blank" class="main-nav-link switch-friends-link" href="http://litten.me/">Litten</a>
+  	        
+  	        </div>
+  		
+    	</section>
+    
+
+    
+    	<section class="tools-section tools-section-me">
+  	  	
+  	  		<div class="aboutme-wrap" id="js-aboutme">Android和React方向&lt;br&gt;&lt;br&gt;勿忘初心方得始终</div>
+  	  	
+    	</section>
+    
+  </div>
+  
+</div>
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" style="display:none" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  </div>
+</body>
+</html>
