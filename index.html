@@ -146,6 +146,63 @@
       <div class="body-wrap">
         
   
+    <article id="post-Promise介绍" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/12/23/Promise介绍/">Promise介绍</a>
+    </h1>
+  
+
+        <a href="/2016/12/23/Promise介绍/" class="archive-article-date">
+  	<time datetime="2016-12-23T07:16:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-12-23</time>
+</a>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>&#x57FA;&#x672C;&#x7528;&#x6CD5;&#xFF1A;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">var promise = new Promise((resolve, reject) =&gt; {</div><div class="line">    console.log(&apos;&#x7ACB;&#x5373;&#x6267;&#x884C;&apos;);</div><div class="line">    var result = 2+1;</div><div class="line">    if(result&gt;2){</div><div class="line">        resolve(result);                </div><div class="line">    }else{</div><div class="line">        reject(result);</div><div class="line">    }</div><div class="line">});</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">// &#x5199;&#x6CD5;&#x4E00;</div><div class="line">promise.then(value=&gt;{</div><div class="line">    console.log(&apos;resolve:&apos;+value);</div><div class="line">}, e=&gt;{</div><div class="line">    console.log(&apos;reject:&apos;+e);</div><div class="line">});</div><div class="line"></div><div class="line">// &#x5199;&#x6CD5;&#x4E8C;</div><div class="line">promise.then(value=&gt;{</div><div class="line">    console.log(&apos;resolve:&apos;+value);</div><div class="line">}).catch(e=&gt;{</div><div class="line">    console.log(&apos;reject:&apos;+e)</div><div class="line">});</div></pre></td></tr></table></figure>
+<p>&#x4E24;&#x79CD;&#x5199;&#x6CD5;&#x7684;&#x4E0D;&#x540C;&#x5728;&#x4E8E;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">promise.then(value=&gt;{</div><div class="line">    throw new Error(&apos;div 0&apos;);</div><div class="line">    console.log(&apos;resolve:&apos;+value);</div><div class="line">}, e=&gt;{ // &#x6355;&#x83B7;&#x4E0D;&#x5230;resovle&#x4E2D;&#x7684;&#x5F02;&#x5E38;</div><div class="line">    console.log(&apos;reject:&apos;+e);</div><div class="line">});</div><div class="line"></div><div class="line">promise.then(value=&gt;{</div><div class="line">    throw new Error(&apos;div 0&apos;);</div><div class="line">    console.log(&apos;resolve:&apos;+value);</div><div class="line">}).catch(e=&gt;{// &#x53EF;&#x4EE5;&#x6355;&#x83B7;&#x5230;resolve&#x4E2D;&#x7684;&#x5F02;&#x5E38;</div><div class="line">    console.log(&apos;reject:&apos;+e)</div><div class="line">});</div></pre></td></tr></table></figure></p>
+<p>&#x5F02;&#x6B65;&#x53D6;&#x6D88;&#x7684;promise<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div></pre></td><td class="code"><pre><div class="line">const makeCancelable = (promise) =&gt; {</div><div class="line">  let hasCanceled = false;</div><div class="line"></div><div class="line">  const wrappedPromise = new Promise((resolve, reject) =&gt; {</div><div class="line">    promise.then((val) =&gt; {</div><div class="line">      const x = hasCanceled ? reject({ isCanceled: true }) : resolve(val);</div><div class="line">      return x;</div><div class="line">    }).catch((error) =&gt; {</div><div class="line">      const x = hasCanceled ? reject({ isCanceled: true }) : reject(error);</div><div class="line">      return x;</div><div class="line">    });</div><div class="line">  });</div><div class="line"></div><div class="line">  return {</div><div class="line">    promise: wrappedPromise,</div><div class="line">    cancel() {</div><div class="line">      hasCanceled = true;</div><div class="line">    },</div><div class="line">  };</div><div class="line">};</div></pre></td></tr></table></figure></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags"></i>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/es6/">es6</a></li></ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2016/12/23/Promise介绍/#more">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+
+
+
+
+
+
+  
     <article id="post-git-checkout命令" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -746,65 +803,6 @@
 
 
   
-    <article id="post-weixin-preInjectJSBridge-fail错误" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/11/30/weixin-preInjectJSBridge-fail错误/">weixin://preInjectJSBridge/fail错误</a>
-    </h1>
-  
-
-        <a href="/2016/11/30/weixin-preInjectJSBridge-fail错误/" class="archive-article-date">
-  	<time datetime="2016-11-30T03:03:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-11-30</time>
-</a>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>&#x7528;reactjs&#x5199;&#x7684;SPA&#x7F51;&#x7AD9;&#xFF0C;&#x5728;android&#x7684;&#x5FAE;&#x4FE1;&#x548C;QQ&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x4F1A;&#x62A5;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;PC&#x548C;IOS&#x7684;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x3002;&#x6B64;&#x95EE;&#x9898;&#x53D1;&#x751F;&#x7684;&#x539F;&#x56E0;&#x662F;Android&#x7AEF;&#x5BF9;es6&#x7684;&#x4E0D;&#x517C;&#x5BB9;&#xFF0C;&#x4F7F;&#x7528;&#x4E86;&#x6A21;&#x7248;&#x7B26;&#x53F7;`&#x3002;</p>
-<p>&#x4F46;&#x9879;&#x76EE;&#x4E2D;&#x5DF2;&#x7ECF;&#x4F7F;&#x7528;&#x4E86;babel&#x5DE5;&#x5177;&#xFF0C;&#x8FD8;&#x662F;&#x6709;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x6700;&#x540E;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x5F0F;&#x662F;&#x4E3A;&#x6D4F;&#x89C8;&#x5668;&#x6DFB;&#x52A0;es6&#x7684;&#x8FD0;&#x884C;&#x73AF;&#x5883;&#x3002;</p>
-<p><a href="https://babeljs.io/docs/usage/polyfill/" target="_blank" rel="external">Polyfill&#x5B98;&#x7F51;&#x5730;&#x5740;</a>&#x3002;</p>
-<p>To include the polyfill you need to require it at the top of the entry point to your application.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">require(&quot;babel-polyfill&quot;);</div></pre></td></tr></table></figure></p>
-<p>If you are using ES6&#x2019;s import syntax in your application&#x2019;s entry point, you should instead import the polyfill at the top of the entry point to ensure the polyfills are loaded first:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">import &quot;babel-polyfill&quot;;</div></pre></td></tr></table></figure></p>
-<p>With webpack.config.js, add babel-polyfill to your entry array:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">module.exports = {</div><div class="line">   entry: [&apos;babel-polyfill&apos;, &apos;./app/js&apos;]</div><div class="line">};</div></pre></td></tr></table></figure></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags"></i>
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/reactjs/">reactjs</a></li></ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2016/11/30/weixin-preInjectJSBridge-fail错误/#more">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
@@ -869,7 +867,7 @@
     
     	<section class="tools-section tools-section-tag">
     			<div class="widget tagcloud" id="js-tagcloud">
-    				<a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/nexus5/" style="font-size: 10px;">nexus5</a> <a href="/tags/nodejs/" style="font-size: 15px;">nodejs</a> <a href="/tags/react-router/" style="font-size: 20px;">react-router</a> <a href="/tags/reactjs/" style="font-size: 10px;">reactjs</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
+    				<a href="/tags/android/" style="font-size: 10px;">android</a> <a href="/tags/css/" style="font-size: 10px;">css</a> <a href="/tags/es6/" style="font-size: 10px;">es6</a> <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 15px;">hexo</a> <a href="/tags/nexus5/" style="font-size: 10px;">nexus5</a> <a href="/tags/nodejs/" style="font-size: 15px;">nodejs</a> <a href="/tags/react-router/" style="font-size: 20px;">react-router</a> <a href="/tags/reactjs/" style="font-size: 10px;">reactjs</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/随笔/" style="font-size: 10px;">随笔</a>
     			</div>
     	</section>
     
