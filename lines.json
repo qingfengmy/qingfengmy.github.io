@@ -1,85 +1,518 @@
 [
- {"_id":"0a8f2930f22b11e89c88d53cf458cf36","content":"积善之家，必有余庆，积不善之家，必有余殃。​​​​","author":"易传","createDate":"2018-11-27 17:58:50"}
+  {
+    "_id": "0a8f2930f22b11e89c88d53cf458cf36",
+    "content": "积善之家，必有余庆，积不善之家，必有余殃。​​​​",
+    "author": "易传",
+    "createDate": "2018-11-27 17:58:50"
+  },
 
- ,{"_id":"0a8f7750f22b11e89c88d53cf458cf36","content":"要把最好的脾气给了外人，而把最坏的脾气留给家人。​​​​","author":"洞见","createDate":"2018-11-27 17:58:50"}
+  {
+    "_id": "0a8f7750f22b11e89c88d53cf458cf36",
+    "content": "要把最好的脾气给了外人，而把最坏的脾气留给家人。​​​​",
+    "author": "洞见",
+    "createDate": "2018-11-27 17:58:50"
+  },
 
- ,{"_id":"0a8f7751f22b11e89c88d53cf458cf36","content":"大家都知道祥林嫂的故事，她身世凄惨，因而满腹牢骚。逢人就诉说自己的不幸，一遍又一遍讲述那些悲惨遭遇，祈求博得他人的同情。正是因为她牢骚太多，原本同情她的人也对她感到厌恶，而她的伤心事，也成为了别人茶余饭后的谈资。满腹牢骚也解决不了半点实际问题，把自己的疮疤揭开给别人看，更不可能赢得他人的尊重。没有人愿意接受负能量，偶尔发点牢骚可以，长时间唉声叹气，再亲近的人也会受不了。​​​​","author":"洞见","createDate":"2018-11-27 17:58:50"}
- ,{"_id":"0a8f7752f22b11e89c88d53cf458cf36","content":"眼里长着太阳，笑里全是坦荡。​​​​","author":"易传","createDate":"2018-11-27 17:58:50"}
- ,{"_id":"0a8f7753f22b11e89c88d53cf458cf36","content":"许多人所谓的成熟，不过是被习俗磨去了棱角，变得世故而实际了。那不是成熟，而是精神的早衰和个性的消亡。真正的成熟，应当是独特个性的形成，真实自我的发现，精神上的结果和丰收。”很多貌似成熟的人，就像没有成熟就落到地上的果子，看似成熟了，实际上是被虫子咬了，烂了。​​​​","author":"周国平-灵魂只能独行","createDate":"2018-11-27 17:58:50"}
- ,{"_id":"1054df30ed5911e89dc9332f9f357a84","content":"不管你维护的正义多么正确，弱小将一事无成。","author":"海贼王-维格尔","createDate":"2018-11-21 14:45:41"}
-,{"_id":"10552d50ed5911e89dc9332f9f357a84","content":"肉体才是人的神殿，不管那里供奉什么，它都应该更强韧，更美丽，更清洁。","author":"村上春树","createDate":"2018-11-21 14:45:41"}
-,{"_id":"10552d51ed5911e89dc9332f9f357a84","content":"勿忘初心，方得始终。","author":"华严经","createDate":"2018-11-21 14:45:41"}
-,{"_id":"10552d52ed5911e89dc9332f9f357a84","content":"他凡学一样东西，皆能集中精神，专心一致，在很快的时间内扎好基础，然后即有所悟；如果不能首创一格，自具特色，他情愿到此为止，把这学识转为他的基础之一。","author":"金庸-神雕侠侣","createDate":"2018-11-21 14:45:41"}
-,{"_id":"10552d53ed5911e89dc9332f9f357a84","content":"如果我做不回曾经的小祥，我就救不了现在的自己","author":"刘德华-龙在江湖","createDate":"2018-11-21 14:45:41"}
-,{"_id":"6a0b95b0ef0111e8a3b14f9ae6fcf7ba","content":"一位印度老人对孙子说，每个人身体里都有两只狼，他们残酷地互相搏杀。一只狼代表愤怒、嫉妒、骄傲、害怕和耻辱；另一只代表温柔、善良、感恩、希望、微笑和爱。小男孩着急地问：“爷爷，哪只狼更厉害？”老人回答：你喂食的那一只。—— 你的心所朝的方向就是你未来人生的路！ ​​​​","author":"佚名","createDate":"2018-11-23 17:23:18"}
-,{"_id":"6a0be3d0ef0111e8a3b14f9ae6fcf7ba","content":"“你现在的生活也许不是你想要的，但绝对是你自找的。” 世界上很多的抱怨都可以用这句话来回答。","author":"佚名","createDate":"2018-11-23 17:23:18"}
-,{"_id":"6a0be3d1ef0111e8a3b14f9ae6fcf7ba","content":"相鼠有皮,人而无仪!人而无仪,不死何为?    相鼠有齿,人而无止!人而无止,不死何俟?    相鼠有体,人而无礼,人而无礼!胡不遄死?","author":"诗经","createDate":"2018-11-23 17:23:18"}
+  {
+    "_id": "0a8f7751f22b11e89c88d53cf458cf36",
+    "content":
+      "大家都知道祥林嫂的故事，她身世凄惨，因而满腹牢骚。逢人就诉说自己的不幸，一遍又一遍讲述那些悲惨遭遇，祈求博得他人的同情。正是因为她牢骚太多，原本同情她的人也对她感到厌恶，而她的伤心事，也成为了别人茶余饭后的谈资。满腹牢骚也解决不了半点实际问题，把自己的疮疤揭开给别人看，更不可能赢得他人的尊重。没有人愿意接受负能量，偶尔发点牢骚可以，长时间唉声叹气，再亲近的人也会受不了。​​​​",
+    "author": "洞见",
+    "createDate": "2018-11-27 17:58:50"
+  },
+  {
+    "_id": "0a8f7752f22b11e89c88d53cf458cf36",
+    "content": "眼里长着太阳，笑里全是坦荡。​​​​",
+    "author": "易传",
+    "createDate": "2018-11-27 17:58:50"
+  },
+  {
+    "_id": "0a8f7753f22b11e89c88d53cf458cf36",
+    "content":
+      "许多人所谓的成熟，不过是被习俗磨去了棱角，变得世故而实际了。那不是成熟，而是精神的早衰和个性的消亡。真正的成熟，应当是独特个性的形成，真实自我的发现，精神上的结果和丰收。”很多貌似成熟的人，就像没有成熟就落到地上的果子，看似成熟了，实际上是被虫子咬了，烂了。​​​​",
+    "author": "周国平-灵魂只能独行",
+    "createDate": "2018-11-27 17:58:50"
+  },
+  {
+    "_id": "1054df30ed5911e89dc9332f9f357a84",
+    "content": "不管你维护的正义多么正确，弱小将一事无成。",
+    "author": "海贼王-维格尔",
+    "createDate": "2018-11-21 14:45:41"
+  },
+  {
+    "_id": "10552d50ed5911e89dc9332f9f357a84",
+    "content":
+      "肉体才是人的神殿，不管那里供奉什么，它都应该更强韧，更美丽，更清洁。",
+    "author": "村上春树",
+    "createDate": "2018-11-21 14:45:41"
+  },
+  {
+    "_id": "10552d51ed5911e89dc9332f9f357a84",
+    "content": "勿忘初心，方得始终。",
+    "author": "华严经",
+    "createDate": "2018-11-21 14:45:41"
+  },
+  {
+    "_id": "10552d52ed5911e89dc9332f9f357a84",
+    "content":
+      "他凡学一样东西，皆能集中精神，专心一致，在很快的时间内扎好基础，然后即有所悟；如果不能首创一格，自具特色，他情愿到此为止，把这学识转为他的基础之一。",
+    "author": "金庸-神雕侠侣",
+    "createDate": "2018-11-21 14:45:41"
+  },
+  {
+    "_id": "10552d53ed5911e89dc9332f9f357a84",
+    "content": "如果我做不回曾经的小祥，我就救不了现在的自己",
+    "author": "刘德华-龙在江湖",
+    "createDate": "2018-11-21 14:45:41"
+  },
+  {
+    "_id": "6a0b95b0ef0111e8a3b14f9ae6fcf7ba",
+    "content":
+      "一位印度老人对孙子说，每个人身体里都有两只狼，他们残酷地互相搏杀。一只狼代表愤怒、嫉妒、骄傲、害怕和耻辱；另一只代表温柔、善良、感恩、希望、微笑和爱。小男孩着急地问：“爷爷，哪只狼更厉害？”老人回答：你喂食的那一只。—— 你的心所朝的方向就是你未来人生的路！ ​​​​",
+    "author": "佚名",
+    "createDate": "2018-11-23 17:23:18"
+  },
+  {
+    "_id": "6a0be3d0ef0111e8a3b14f9ae6fcf7ba",
+    "content":
+      "“你现在的生活也许不是你想要的，但绝对是你自找的。” 世界上很多的抱怨都可以用这句话来回答。",
+    "author": "佚名",
+    "createDate": "2018-11-23 17:23:18"
+  },
+  {
+    "_id": "6a0be3d1ef0111e8a3b14f9ae6fcf7ba",
+    "content":
+      "相鼠有皮,人而无仪!人而无仪,不死何为?    相鼠有齿,人而无止!人而无止,不死何俟?    相鼠有体,人而无礼,人而无礼!胡不遄死?",
+    "author": "诗经",
+    "createDate": "2018-11-23 17:23:18"
+  },
 
-
-,{"_id":"6a0be3d2ef0111e8a3b14f9ae6fcf7ba","content":"棍棒底下出孝子的翻译是棍棒底下最省事","author":"佚名","createDate":"2018-11-23 17:23:18"}
-,{"_id":"6a0be3d3ef0111e8a3b14f9ae6fcf7ba","content":"就算你这些年一事无成，你也肯定已经是：拖延大师，妥协天才，咸鱼精英，对付传奇，夜宵外卖品鉴师，回笼早觉艺术家，“无所谓”终身成就奖，“再说吧”专属代言人，熬夜脱发国服最强王者，减肥失败大中华区形象大使，“酒后表演”戛纳柏林威尼斯三料影后，“常年缺钱”非遗传统技艺唯一指定继承人。","author":"佚名","createDate":"2018-11-23 17:23:18"}
-,{"_id":"6a0be3d4ef0111e8a3b14f9ae6fcf7ba","content":"世上哪有什么岁月静好,只不过是有人在为你负重前行。","author":"佚名","createDate":"2018-11-23 17:23:18"}
-,{"_id":"6a0c0ae0ef0111e8a3b14f9ae6fcf7ba","content":"做个寻常的人，三五好友，一个恋人，面目清秀，听街知巷闻的歌，看老少皆宜的剧，穿舒适的衣裤。买少许的电子产品，说得体的话语，有自己的生活圈子。对世界有质疑，但凡俗往来总能寻见真情。不偏颇矛盾，不低微脆弱，不向盲目索取，不事事推敲。","author":"佚名","createDate":"2018-11-23 17:23:18"}
-,{"_id":"6a0c0ae1ef0111e8a3b14f9ae6fcf7ba","content":"赵客缦胡缨，吴钩霜雪明。    银鞍照白马，飒沓如流星。    十步杀一人，千里不留行。    事了拂衣去，深藏功与名。  闲过信陵饮，脱剑膝前横。   将炙啖朱亥，持觞劝侯嬴。    三杯吐然诺，五岳倒为轻。   眼花耳热后，意气素霓生。   救赵挥金槌，邯郸先震惊。 千秋二壮士，煊赫大梁城。  谁能书阁下，白首太玄经。","author":"李白","createDate":"2018-11-23 17:23:18"}
-,{"_id":"6a0c0ae2ef0111e8a3b14f9ae6fcf7ba","content":"命是弱者的借口，运是强者的谦词","author":"佚名","createDate":"2018-11-23 17:23:18"}
-,{"_id":"6dc70a70ed6911e8b5edb91158268098","content":"悦己之作，方能悦人。","author":"佚名","createDate":"2018-11-21 16:42:50"}
-,{"_id":"6dc75890ed6911e8b5edb91158268098","content":"他强任他强，清风拂山岗；他横任他横，明月照大江；他自强来他自横，我自一口真气足。","author":"金庸-倚天屠龙记","createDate":"2018-11-21 16:42:50"}
-,{"_id":"6dc75891ed6911e8b5edb91158268098","content":"借来的火照不亮自己的心灵。","author":"佚名","createDate":"2018-11-21 16:42:50"}
-,{"_id":"6dc75892ed6911e8b5edb91158268098","content":"成年人不会轻易成为好朋友，所以儿时的玩伴更显珍贵，是一生的朋友。","author":"佚名","createDate":"2018-11-21 16:42:50"}
-,{"_id":"6dc75893ed6911e8b5edb91158268098","content":"田园有宅男， 边塞多愤青； 咏古伤不起， 送别满基情。","author":"唐诗","createDate":"2018-11-21 16:42:50"}
-,{"_id":"6dc75894ed6911e8b5edb91158268098","content":"小资喝花酒， 老兵坐床头， 知青咏古自助游， 皇上宫中愁。剩女家里宅， 萝莉嫁王侯， 名媛丈夫死的早， MM在青楼。","author":"宋词","createDate":"2018-11-21 16:42:50"}
-,{"_id":"6dc75895ed6911e8b5edb91158268098","content":"所有成长的秘诀在于自我克制，如果你学会了驾驭自己，你就有了一位最好的老师。","author":"玛格丽特 撒切尔","createDate":"2018-11-21 16:42:50"}
-,{"_id":"6dc75896ed6911e8b5edb91158268098","content":"---什么都不能跟人家比，谁像你一样没有用啊！ ---没有谁像你一样啊，不用什么都跟人家比。","author":"佚名","createDate":"2018-11-21 16:42:50"}
-,{"_id":"6dc75897ed6911e8b5edb91158268098","content":"一个人的成熟与否，不是出口成章，说出很多深刻的道理或者是思想境界达到很高，而是待人接物让人舒适，并且不卑不亢，保持自我的棱角，又有接纳他人的圆润。","author":"佚名","createDate":"2018-11-21 16:42:50"}
-,{"_id":"6dc75898ed6911e8b5edb91158268098","content":"有人呱呱坠地，就有人垂垂老矣。","author":"佚名","createDate":"2018-11-21 16:42:50"}
-,{"_id":"6dc75899ed6911e8b5edb91158268098","content":"二战美国统计飞机伤亡情况，发现飞回来的都是飞机腹部中弹多，于是申请加固飞机腹部。司令部下发的文件却是加固机翼，因为机翼受损的都没飞回来，那些没飞回来的数据被称作 沉默的数据。","author":"佚名","createDate":"2018-11-21 16:42:50"}
-,{"_id":"6dc7589aed6911e8b5edb91158268098","content":"所有有趣的小孩子在学校行走，突告母亲，姐姐送伞来，必羞涩，这是心理。小学，性质上就是伊甸园。儿童有儿童的浪漫主义，一时出现父母，拉回现实。天堂人间不能共存，世俗和理想难以沟通。","author":"佚名","createDate":"2018-11-21 16:42:50"}
-,{"_id":"795c9d20f46f11e8ab0ce37e61f138ef","content":"人长大的标志，就是不爱发脾气了，因为能让你在意的事情变少了，以前能冒犯到你的，现在都变得无所谓了，就像灰尘落在身上，轻轻拂去就好了。你还有很长的路要走，你还有很亮的星星要去看，成熟就是不再为不值得的人浪费时间了，最珍贵的记忆要留给最美丽的风景。​​​​","author":"一禅小和尚","createDate":"2018-11-30 15:13:44"}
-,{"_id":"795f3530f46f11e8ab0ce37e61f138ef","content":"什么是幸福？一是睡在自家的床上，二是吃父母做的饭菜，三是听爱人给你说情话，四是跟孩子做游戏。​​​​","author":"林语堂","createDate":"2018-11-30 15:13:44"}
-,{"_id":"795f3531f46f11e8ab0ce37e61f138ef","content":"间歇性踌躇满志、持续性混吃等死。​​​​","author":"佚名","createDate":"2018-11-30 15:13:44"}
-,{"_id":"795f3532f46f11e8ab0ce37e61f138ef","content":"蓬生麻中，不扶而直，白沙在涅，与之俱黑。​​​​","author":"荀子-劝学","createDate":"2018-11-30 15:13:44"}
-,{"_id":"795f3533f46f11e8ab0ce37e61f138ef","content":"三十岁的肩膀上扛着再也不是自己一个人，而是一个男人该扛起来的责任，上有老人，中有老婆，下有孩子。​​​​","author":"王小波","createDate":"2018-11-30 15:13:44"}
-,{"_id":"795f3534f46f11e8ab0ce37e61f138ef","content":"春有百花秋有月，夏有凉风冬有雪。莫将闲事挂心头，便是人间好时节。​​​​","author":"释绍昙（宋）-颂古五十五首其一","createDate":"2018-11-30 15:13:44"}
-,{"_id":"795f3535f46f11e8ab0ce37e61f138ef","content":"既往不恋，当下不杂，未来不迎。​​​​","author":"曾国藩","createDate":"2018-11-30 15:13:44"}
-,{"_id":"795f3536f46f11e8ab0ce37e61f138ef","content":"善战者不败，善败者不亡。​​​​","author":"诸葛亮","createDate":"2018-11-30 15:13:44"}
-,{"_id":"795f5c40f46f11e8ab0ce37e61f138ef","content":"古者富贵而名摩灭，不可胜记，唯倜傥非常之人称焉。盖文王拘而演《周易》；仲尼厄而作《春秋》；屈原放逐，乃赋《离骚》；左丘失明，厥有《国语》；孙子膑脚，《兵法》修列；不韦迁蜀，世传《吕览》；韩非囚秦，《说难》《孤愤》；《诗》三百篇，此皆圣贤发愤之所为作也。此人皆意有所郁结，不得通其道，故述往事、思来者。​​​​","author":"司马迁-报任安书","createDate":"2018-11-30 15:13:44"}
-,{"_id":"795f5c41f46f11e8ab0ce37e61f138ef","content":"扬善于公庭,规过于私室。​​​​","author":"曾国藩","createDate":"2018-11-30 15:13:44"}
-,{"_id":"795f5c42f46f11e8ab0ce37e61f138ef","content":"知是行的主意，行是知的功夫；知是行之始，行是知之成。​​​​","author":"王阳明","createDate":"2018-11-30 15:13:44"}
-,{"_id":"795f5c43f46f11e8ab0ce37e61f138ef","content":"知之真切笃实处即是行，行之明觉精察处即是知。​​​​","author":"王阳明","createDate":"2018-11-30 15:13:44"}
-,{"_id":"W_T0EkXacNtiP6mi","content":"知人者智，自知者明； 胜人者有力，自胜者强； 知足者富，强行者有志； 不失其所者久，死而不亡者寿。","author":"老子","createDate":"2018-11-21 13:58:42"}
-,{"_id":"W_TUA0XacNtiP6mX","author":"宋人张咏","createDate":"2018-11-21 14:32:25","content":"临事有三难。能见，一也。见而能行，二也。当行必果决，三也","collectUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"comments":[{"comment":"555","createDate":"2018-11-23 06:20:04","id":"d0b99740eee711e880066790d9b49be9","user":{"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKYPpOWCGE1M5OiarRro5cZUFRu2yScaZeYjE02avPOQk1RAPvUAbiacxpxFBsNPwJAcORN4MZ0ua9w/132","city":"Handan","collectLines":["W_TUA0XacNtiP6mX"],"_id":"W_eM55SXoyWmdmij","country":"China","createDate":"2018-11-23 13:15:23","gender":{"$numberLong":"1"},"language":"zh_CN","nickName":"长空","province":"Hebei","_openid":"oenkb0YRdhw6delmPvatWBtcndTE"}},{"id":"1c728250eee811e880066790d9b49be9","user":{"commentLines":[{"comment":"555","createDate":"2018-11-23 06:20:04","id":"d0b99740eee711e880066790d9b49be9","line":,{"_id":"W_TUA0XacNtiP6mX","author":"宋人张咏","collectUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"content":"临事有三难。能见，一也。见而能行，二也。当行必果决，三也","createDate":"2018-11-21 14:32:25"}}],"createDate":"2018-11-23 13:15:23","language":"zh_CN","nickName":"长空","province":"Hebei","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKYPpOWCGE1M5OiarRro5cZUFRu2yScaZeYjE02avPOQk1RAPvUAbiacxpxFBsNPwJAcORN4MZ0ua9w/132","city":"Handan","collectLines":["W_TUA0XacNtiP6mX"],"country":"China","gender":{"$numberLong":"1"},"_id":"W_eM55SXoyWmdmij","_openid":"oenkb0YRdhw6delmPvatWBtcndTE"},"comment":"ri'zhao'xi日照香炉生紫烟，遥看瀑布挂前川，fei'liu'zh飞流直下三千尺，yi'shi'yi疑是银河落九天。","createDate":"2018-11-23 06:22:11"}],"zanUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"caiUsers":["oenkb0YRdhw6delmPvatWBtcndTE"]}
-,{"_id":"W_TUSXahafTeBPOX","content":"凡是值得知道的，没有一个是能够教会的。","author":"奥斯卡 王尔德","createDate":"2018-11-21 11:04:23","comments":[{"comment":"6666","createDate":"2018-11-23 06:58:17","id":"27bbf790eeed11e8b8820bf85624a55f","user":,{"_id":"W_eM55SXoyWmdmij","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKYPpOWCGE1M5OiarRro5cZUFRu2yScaZeYjE02avPOQk1RAPvUAbiacxpxFBsNPwJAcORN4MZ0ua9w/132","country":"China","createDate":"2018-11-23 13:15:23","language":"zh_CN","nickName":"长空","province":"Hebei","_openid":"oenkb0YRdhw6delmPvatWBtcndTE","city":"Handan","collectLines":["W_TUA0XacNtiP6mX"],"commentLines":[{"createDate":"2018-11-23 06:20:04","id":"d0b99740eee711e880066790d9b49be9","line":{"author":"宋人张咏","collectUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"content":"临事有三难。能见，一也。见而能行，二也。当行必果决，三也","createDate":"2018-11-21 14:32:25","_id":"W_TUA0XacNtiP6mX"},"comment":"555"},{"comment":"ri'zhao'xi日照香炉生紫烟，遥看瀑布挂前川，fei'liu'zh飞流直下三千尺，yi'shi'yi疑是银河落九天。","createDate":"2018-11-23 06:22:11","id":"1c728250eee811e880066790d9b49be9","line":,{"_id":"W_TUA0XacNtiP6mX","author":"宋人张咏","collectUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"comments":[{"comment":"555","createDate":"2018-11-23 06:20:04","id":"d0b99740eee711e880066790d9b49be9","user":{"_openid":"oenkb0YRdhw6delmPvatWBtcndTE","city":"Handan","_id":"W_eM55SXoyWmdmij","collectLines":["W_TUA0XacNtiP6mX"],"country":"China","createDate":"2018-11-23 13:15:23","gender":{"$numberLong":"1"},"language":"zh_CN","nickName":"长空","province":"Hebei","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKYPpOWCGE1M5OiarRro5cZUFRu2yScaZeYjE02avPOQk1RAPvUAbiacxpxFBsNPwJAcORN4MZ0ua9w/132"}}],"content":"临事有三难。能见，一也。见而能行，二也。当行必果决，三也","createDate":"2018-11-21 14:32:25"}}],"gender":{"$numberLong":"1"}}},{"id":"43712af0eeed11e887fca9078048b754","user":{"city":"Handan","commentLines":[{"createDate":"2018-11-23 06:20:04","id":"d0b99740eee711e880066790d9b49be9","line":{"createDate":"2018-11-21 14:32:25","_id":"W_TUA0XacNtiP6mX","author":"宋人张咏","collectUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"content":"临事有三难。能见，一也。见而能行，二也。当行必果决，三也"},"comment":"555"},{"createDate":"2018-11-23 06:22:11","id":"1c728250eee811e880066790d9b49be9","line":,{"_id":"W_TUA0XacNtiP6mX","author":"宋人张咏","collectUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"comments":[{"createDate":"2018-11-23 06:20:04","id":"d0b99740eee711e880066790d9b49be9","user":{"language":"zh_CN","nickName":"长空","_openid":"oenkb0YRdhw6delmPvatWBtcndTE","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKYPpOWCGE1M5OiarRro5cZUFRu2yScaZeYjE02avPOQk1RAPvUAbiacxpxFBsNPwJAcORN4MZ0ua9w/132","city":"Handan","collectLines":["W_TUA0XacNtiP6mX"],"province":"Hebei","_id":"W_eM55SXoyWmdmij","country":"China","createDate":"2018-11-23 13:15:23","gender":{"$numberLong":"1"}},"comment":"555"}],"content":"临事有三难。能见，一也。见而能行，二也。当行必果决，三也","createDate":"2018-11-21 14:32:25"},"comment":"ri'zhao'xi日照香炉生紫烟，遥看瀑布挂前川，fei'liu'zh飞流直下三千尺，yi'shi'yi疑是银河落九天。"},{"comment":"6666","createDate":"2018-11-23 06:58:17","id":"27bbf790eeed11e8b8820bf85624a55f","line":,{"_id":"W_TUSXahafTeBPOX","author":"奥斯卡 王尔德","content":"凡是值得知道的，没有一个是能够教会的。","createDate":"2018-11-21 11:04:23"}}],"country":"China","createDate":"2018-11-23 13:15:23","gender":{"$numberLong":"1"},"avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKYPpOWCGE1M5OiarRro5cZUFRu2yScaZeYjE02avPOQk1RAPvUAbiacxpxFBsNPwJAcORN4MZ0ua9w/132","_openid":"oenkb0YRdhw6delmPvatWBtcndTE","collectLines":["W_TUA0XacNtiP6mX"],"language":"zh_CN","nickName":"长空","province":"Hebei","_id":"W_eM55SXoyWmdmij"},"comment":"99","createDate":"2018-11-23 14:59:04"}],"zanUsers":[],"caiUsers":["oenkb0YRdhw6delmPvatWBtcndTE"]}
-,{"_id":"W_TUeTxe6pOxy3f-","content":"凡发一谋，举一事，必有风波磨折，必有浮议摇撼。坚忍力争而后有济。","author":"曾国藩","createDate":"2018-11-21 11:43:53","comments":[{"user":{"createDate":"2018-11-23 13:15:23","language":"zh_CN","_id":"W_eM55SXoyWmdmij","commentLines":[{"comment":"555","createDate":"2018-11-23 06:20:04","id":"d0b99740eee711e880066790d9b49be9","line":{"createDate":"2018-11-21 14:32:25","_id":"W_TUA0XacNtiP6mX","author":"宋人张咏","collectUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"content":"临事有三难。能见，一也。见而能行，二也。当行必果决，三也"}},{"comment":"ri'zhao'xi日照香炉生紫烟，遥看瀑布挂前川，fei'liu'zh飞流直下三千尺，yi'shi'yi疑是银河落九天。","createDate":"2018-11-23 06:22:11","id":"1c728250eee811e880066790d9b49be9","line":,{"_id":"W_TUA0XacNtiP6mX","author":"宋人张咏","collectUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"comments":[{"createDate":"2018-11-23 06:20:04","id":"d0b99740eee711e880066790d9b49be9","user":{"gender":{"$numberLong":"1"},"language":"zh_CN","province":"Hebei","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKYPpOWCGE1M5OiarRro5cZUFRu2yScaZeYjE02avPOQk1RAPvUAbiacxpxFBsNPwJAcORN4MZ0ua9w/132","collectLines":["W_TUA0XacNtiP6mX"],"createDate":"2018-11-23 13:15:23","country":"China","nickName":"长空","_id":"W_eM55SXoyWmdmij","_openid":"oenkb0YRdhw6delmPvatWBtcndTE","city":"Handan"},"comment":"555"}],"content":"临事有三难。能见，一也。见而能行，二也。当行必果决，三也","createDate":"2018-11-21 14:32:25"}},{"comment":"6666","createDate":"2018-11-23 06:58:17","id":"27bbf790eeed11e8b8820bf85624a55f","line":{"author":"奥斯卡 王尔德","content":"凡是值得知道的，没有一个是能够教会的。","createDate":"2018-11-21 11:04:23","_id":"W_TUSXahafTeBPOX"}},{"comment":"99","createDate":"2018-11-23 14:59:04","id":"43712af0eeed11e887fca9078048b754","line":,{"_id":"W_TUSXahafTeBPOX","author":"奥斯卡 王尔德","comments":[{"comment":"6666","createDate":"2018-11-23 06:58:17","id":"27bbf790eeed11e8b8820bf85624a55f","user":{"nickName":"长空","province":"Hebei","_id":"W_eM55SXoyWmdmij","city":"Handan","collectLines":["W_TUA0XacNtiP6mX"],"commentLines":[{"comment":"555","createDate":"2018-11-23 06:20:04","id":"d0b99740eee711e880066790d9b49be9","line":{"collectUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"content":"临事有三难。能见，一也。见而能行，二也。当行必果决，三也","createDate":"2018-11-21 14:32:25","_id":"W_TUA0XacNtiP6mX","author":"宋人张咏"}},{"createDate":"2018-11-23 06:22:11","id":"1c728250eee811e880066790d9b49be9","line":,{"_id":"W_TUA0XacNtiP6mX","author":"宋人张咏","collectUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"comments":[{"comment":"555","createDate":"2018-11-23 06:20:04","id":"d0b99740eee711e880066790d9b49be9","user":{"_openid":"oenkb0YRdhw6delmPvatWBtcndTE","country":"China","createDate":"2018-11-23 13:15:23","gender":{"$numberLong":"1"},"language":"zh_CN","province":"Hebei","_id":"W_eM55SXoyWmdmij","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKYPpOWCGE1M5OiarRro5cZUFRu2yScaZeYjE02avPOQk1RAPvUAbiacxpxFBsNPwJAcORN4MZ0ua9w/132","city":"Handan","collectLines":["W_TUA0XacNtiP6mX"],"nickName":"长空"}}],"content":"临事有三难。能见，一也。见而能行，二也。当行必果决，三也","createDate":"2018-11-21 14:32:25"},"comment":"ri'zhao'xi日照香炉生紫烟，遥看瀑布挂前川，fei'liu'zh飞流直下三千尺，yi'shi'yi疑是银河落九天。"}],"gender":{"$numberLong":"1"},"language":"zh_CN","_openid":"oenkb0YRdhw6delmPvatWBtcndTE","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKYPpOWCGE1M5OiarRro5cZUFRu2yScaZeYjE02avPOQk1RAPvUAbiacxpxFBsNPwJAcORN4MZ0ua9w/132","country":"China","createDate":"2018-11-23 13:15:23"}}],"content":"凡是值得知道的，没有一个是能够教会的。","createDate":"2018-11-21 11:04:23"}}],"country":"China","collectLines":["W_TUA0XacNtiP6mX"],"gender":{"$numberLong":"1"},"nickName":"长空","province":"Hebei","_openid":"oenkb0YRdhw6delmPvatWBtcndTE","avatarUrl":"https://wx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTKYPpOWCGE1M5OiarRro5cZUFRu2yScaZeYjE02avPOQk1RAPvUAbiacxpxFBsNPwJAcORN4MZ0ua9w/132","city":"Handan"},"comment":"666","createDate":"2018-11-23 14:59:59","id":"648e0910eeed11e887fca9078048b754"}]}
-,{"_id":"W_TzH3ahafTeBPOj","author":"安托万·德·圣·埃克苏佩","createDate":"2018-11-21 13:54:37","content":"如果你想做一艘船，不要召集大家搜集木头，不要给他们分配任务， 而是要教会他们对浩瀚的大海心生憧憬。"}
-,{"_id":"W_TzYyfIZl09sRvQ","author":"佛洛依德","createDate":"2018-11-21 13:55:46","content":"一个3岁的男孩在一间黑屋子里大叫：“阿姨，和我说话，我害怕，这里太黑了。” 阿姨回应：“那样做有什么用？你又看不到我。” 男孩说：“没关系，有人说话就能带来光。”"}
-,{"_id":"W_TzyXahafTeBPOk","createDate":"2018-11-21 13:57:30","content":"上士闻道，勤而习之。中士闻道，若存若亡。下士闻道，大笑之，不笑不足以为道。","author":"老子"}
-,{"_id":"d8906c60ed6a11e89ae8b5198c8b1b08","content":"古人学问无遗力，少壮功夫老始成。 纸上得来终觉浅，须知此事要躬行。","author":"陆游","createDate":"2018-11-21 16:52:59","collectUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"zanUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"caiUsers":["oenkb0YRdhw6delmPvatWBtcndTE"]}
-,{"_id":"d89108a0ed6a11e89ae8b5198c8b1b08","content":"做一个寡言的人，却心有一片海，不伤人，不伤己。做一个淡泊的人，却怀揣斑斓的梦，不抛弃，不放弃。","author":"佚名","createDate":"2018-11-21 16:52:59","zanUsers":["oenkb0YRdhw6delmPvatWBtcndTE"],"caiUsers":["oenkb0YRdhw6delmPvatWBtcndTE"]}
-,{"_id":"d89108a1ed6a11e89ae8b5198c8b1b08","content":"若有恒，何必三更眠五更起；最无益，莫过一日曝十日寒","author":"明代学者胡居仁","createDate":"2018-11-21 16:52:59"}
-,{"_id":"d89108a2ed6a11e89ae8b5198c8b1b08","content":"一个不成熟男子的标志是他愿意为某种事业英勇地死去，一个成熟男子的标志是他愿意为某种事业卑贱地活着。","author":"麦田守望者","createDate":"2018-11-21 16:52:59"}
-,{"_id":"d89108a3ed6a11e89ae8b5198c8b1b08","content":"一到考核就紧张，一挨批评就夸海口说狠话。","author":"佚名","createDate":"2018-11-21 16:52:59"}
-,{"_id":"d89108a4ed6a11e89ae8b5198c8b1b08","content":"万里车书一混同，江南岂有别疆封？提兵百万西湖上，立马吴山第一峰！","author":"完颜亮","createDate":"2018-11-21 16:52:59"}
-,{"_id":"d89108a5ed6a11e89ae8b5198c8b1b08","content":"李自成为什么会失败，他的军队攻破明朝都城之后，都是带着巨款财富重上战场的，几乎每个士兵都带着金饼子，试问谁还会再玩命拼杀？ 都想留下一条命好去享受。 这就是为什么不能在战争进行中给军队实赏，而是记功，回家之后再兑现的原因所在。","author":"佚名","createDate":"2018-11-21 16:52:59"}
-,{"_id":"d89108a6ed6a11e89ae8b5198c8b1b08","content":"终日奔忙只为饥，才得有食又思衣。置下绫罗身上穿，抬头却嫌房屋低。盖了高楼并大厦，床前缺少美貌妻。娇妻美妾都娶下，忽虑出门没马骑。买了高头金鞍马，马前马后少跟随。 招了家丁数十个，有钱没权被人欺。时来运转当知县，抱怨官小职位卑。做过尚书升阁老，朝思暮想要登基。","author":"十不足-朱载堉","createDate":"2018-11-21 16:52:59"}
-,{"_id":"d8912fb0ed6a11e89ae8b5198c8b1b08","content":"值得开始的事情就值得去完成。","author":"佚名","createDate":"2018-11-21 16:52:59"}
-,{"_id":"df6046a0eeff11e8a720f985f305dae5","content":"你问我出生前在做什么？    我答：我在天上挑妈妈。    看见你了，    觉得你特别好，    想做你的孩子，    又觉得自己可能没那个运气，    没想到，    第二天一早，    我已经在你肚子里。","author":"佚名","createDate":"2018-11-23 17:12:16","zanUsers":["oenkb0YRdhw6delmPvatWBtcndTE"]}
-,{"_id":"df6094c0eeff11e8a720f985f305dae5","content":"人才非困厄（困苦危难）而不能激，非危心深虑（常怀谨慎之心深刻思虑）则不能达(通达)","author":"曾国藩","createDate":"2018-11-23 17:12:16","zanUsers":["oenkb0YRdhw6delmPvatWBtcndTE"]}
-,{"_id":"df60bbd0eeff11e8a720f985f305dae5","content":"善战者无赫赫之功，善医者无煌煌之名。","author":"孙子兵法","createDate":"2018-11-23 17:12:16"}
-,{"_id":"df60bbd1eeff11e8a720f985f305dae5","content":"先为不可胜，以待敌之可胜。","author":"孙子兵法","createDate":"2018-11-23 17:12:16"}
-,{"_id":"df60bbd2eeff11e8a720f985f305dae5","content":"家人闲坐，灯火可亲。","author":"汪曾祺","createDate":"2018-11-23 17:12:16"}
-,{"_id":"df60bbd3eeff11e8a720f985f305dae5","content":"父母在，人生尚有来处； 父母去，人生只剩归途。","author":"佚名","createDate":"2018-11-23 17:12:16"}
-,{"_id":"df60bbd4eeff11e8a720f985f305dae5","content":"世人皆知有用之用，莫知无用之用。","author":"庄子","createDate":"2018-11-23 17:12:16"}
-,{"_id":"df60bbd5eeff11e8a720f985f305dae5","content":"老师讲过一句格言：当英雄路过的时候，总要有人坐在路边鼓掌。妈妈，我不想成为英雄，我想成为坐在路边鼓掌的人。","author":"坐在路边鼓掌的人","createDate":"2018-11-23 17:12:16"}
-,{"_id":"df60bbd6eeff11e8a720f985f305dae5","content":"三个建筑工人正在砌砖头。 路人问第一个工人：“你在干什么？”工人回答：“我在砌砖头。” 他问第二个工人：“你在干什么？”工人回答：“我正在建造一堵墙。” 他问第三个工人：“你在干什么？”工人回答：“我正在修建一座大教堂！”","author":"佚名","createDate":"2018-11-23 17:12:16"}
-,{"_id":"df60bbd7eeff11e8a720f985f305dae5","content":"此事余有三大过：平日不信不敬，相恃太深，一也；比时一语不合，忿恨无礼，二也；龃龉（ju yu）之后，人之平易，我反悍然不近人情，三也。恶言不出于口，忿言不反于身，此之不知，遑问其他？谨记于此，以为切戒！","author":"曾国藩","createDate":"2018-11-23 17:12:16"}
-,{"_id":"ed84fed0f7a911e8b6263fc7b845d15c","content":"井蛙不可以语于海者，拘于虚也；夏虫不可以语于冰者，笃于时也；曲士不可以语于道者，束于教也。","author":"庄子","createDate":"2018-12-04 17:49:44"}
-,{"_id":"ed861040f7a911e8b6263fc7b845d15c","content":"世俗之人，皆喜人之同乎己而恶人之异于己也。同于己而欲之，异于己而不欲者，以出乎众为心也。","author":"庄子","createDate":"2018-12-04 17:49:44"}
-,{"_id":"ed863750f7a911e8b6263fc7b845d15c","content":"庖人虽不治庖，尸祝不越樽俎而代之矣。","author":"庄子","createDate":"2018-12-04 17:49:44"}
-,{"_id":"ed863751f7a911e8b6263fc7b845d15c","content":"悲观的人虽生犹死，乐观的人永生不老。","author":"佚名","createDate":"2018-12-04 17:49:44"}
-,{"_id":"ed863752f7a911e8b6263fc7b845d15c","content":"生命好在无意义，才容得下各自赋予意义。","author":"木心先生-素履之往","createDate":"2018-12-04 17:49:44"}
-,{"_id":"ed863753f7a911e8b6263fc7b845d15c","content":"一个肮脏的国家，如果人人讲规则而不是谈道德，最终会变成一个有人味儿的正常国家，道德自然会逐渐回归；一个干净的国家，如果人人都不讲规则却大谈道德，谈高尚，天天没事儿就谈道德规范，人人大公无私，最终这个国家会堕落成为一个伪君子遍布的肮脏国家。","author":"胡适","createDate":"2018-12-04 17:49:44"}
-,{"_id":"ed863754f7a911e8b6263fc7b845d15c","content":"道德不能侵犯权利，道德对权利的侵犯，本身就是不道德的。道德只是一种自律的工具，如果用来他律，往往会超出道德的范围。","author":"佚名","createDate":"2018-12-04 17:49:44"}
-,{"_id":"ed863755f7a911e8b6263fc7b845d15c","content":"春秋时期，鲁国规定，凡是鲁国人到国外去，看到本国人在外国为奴隶的，可以先垫钱赎回，回国后到政府报账。孔子的学生子贡在国外赎回了一个鲁国人，但却没有到政府去报账。国人都夸子贡人品高尚，但孔子却不以为然。孔子批评子贡不该这么做。他批评子贡：你的“高尚”的行为，最终会导致没有人愿意赎回奴隶。因为买了不报账是品德高尚，如果我买了再去报账就会被说人品不好，谁还会再去垫钱赎奴隶。事实证明孔子是对的，从子贡以后，很少有人去政府报账，但是解救的奴隶也少了。","author":"小善如大恶","createDate":"2018-12-04 17:49:44"}
-,{"_id":"ed863756f7a911e8b6263fc7b845d15c","content":"你要记住那些大雨中为你撑伞的人，帮你挡住外来之物的人，黑暗中默默抱紧你的人，逗你笑的人，陪你彻夜聊天的人，坐车来看望的人。","author":"村上春树","createDate":"2018-12-04 17:49:44"}
-
+  {
+    "_id": "6a0be3d2ef0111e8a3b14f9ae6fcf7ba",
+    "content": "棍棒底下出孝子的翻译是棍棒底下最省事",
+    "author": "佚名",
+    "createDate": "2018-11-23 17:23:18"
+  },
+  {
+    "_id": "6a0be3d3ef0111e8a3b14f9ae6fcf7ba",
+    "content":
+      "就算你这些年一事无成，你也肯定已经是：拖延大师，妥协天才，咸鱼精英，对付传奇，夜宵外卖品鉴师，回笼早觉艺术家，“无所谓”终身成就奖，“再说吧”专属代言人，熬夜脱发国服最强王者，减肥失败大中华区形象大使，“酒后表演”戛纳柏林威尼斯三料影后，“常年缺钱”非遗传统技艺唯一指定继承人。",
+    "author": "佚名",
+    "createDate": "2018-11-23 17:23:18"
+  },
+  {
+    "_id": "6a0be3d4ef0111e8a3b14f9ae6fcf7ba",
+    "content": "世上哪有什么岁月静好,只不过是有人在为你负重前行。",
+    "author": "佚名",
+    "createDate": "2018-11-23 17:23:18"
+  },
+  {
+    "_id": "6a0c0ae0ef0111e8a3b14f9ae6fcf7ba",
+    "content":
+      "做个寻常的人，三五好友，一个恋人，面目清秀，听街知巷闻的歌，看老少皆宜的剧，穿舒适的衣裤。买少许的电子产品，说得体的话语，有自己的生活圈子。对世界有质疑，但凡俗往来总能寻见真情。不偏颇矛盾，不低微脆弱，不向盲目索取，不事事推敲。",
+    "author": "佚名",
+    "createDate": "2018-11-23 17:23:18"
+  },
+  {
+    "_id": "6a0c0ae1ef0111e8a3b14f9ae6fcf7ba",
+    "content":
+      "赵客缦胡缨，吴钩霜雪明。    银鞍照白马，飒沓如流星。    十步杀一人，千里不留行。    事了拂衣去，深藏功与名。  闲过信陵饮，脱剑膝前横。   将炙啖朱亥，持觞劝侯嬴。    三杯吐然诺，五岳倒为轻。   眼花耳热后，意气素霓生。   救赵挥金槌，邯郸先震惊。 千秋二壮士，煊赫大梁城。  谁能书阁下，白首太玄经。",
+    "author": "李白",
+    "createDate": "2018-11-23 17:23:18"
+  },
+  {
+    "_id": "6a0c0ae2ef0111e8a3b14f9ae6fcf7ba",
+    "content": "命是弱者的借口，运是强者的谦词",
+    "author": "佚名",
+    "createDate": "2018-11-23 17:23:18"
+  },
+  {
+    "_id": "6dc70a70ed6911e8b5edb91158268098",
+    "content": "悦己之作，方能悦人。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "6dc75890ed6911e8b5edb91158268098",
+    "content":
+      "他强任他强，清风拂山岗；他横任他横，明月照大江；他自强来他自横，我自一口真气足。",
+    "author": "金庸-倚天屠龙记",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "6dc75891ed6911e8b5edb91158268098",
+    "content": "借来的火照不亮自己的心灵。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "6dc75892ed6911e8b5edb91158268098",
+    "content":
+      "成年人不会轻易成为好朋友，所以儿时的玩伴更显珍贵，是一生的朋友。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "6dc75893ed6911e8b5edb91158268098",
+    "content": "田园有宅男， 边塞多愤青； 咏古伤不起， 送别满基情。",
+    "author": "唐诗",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "6dc75894ed6911e8b5edb91158268098",
+    "content":
+      "小资喝花酒， 老兵坐床头， 知青咏古自助游， 皇上宫中愁。剩女家里宅， 萝莉嫁王侯， 名媛丈夫死的早， MM在青楼。",
+    "author": "宋词",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "6dc75895ed6911e8b5edb91158268098",
+    "content":
+      "所有成长的秘诀在于自我克制，如果你学会了驾驭自己，你就有了一位最好的老师。",
+    "author": "玛格丽特 撒切尔",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "6dc75896ed6911e8b5edb91158268098",
+    "content":
+      "---什么都不能跟人家比，谁像你一样没有用啊！ ---没有谁像你一样啊，不用什么都跟人家比。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "6dc75897ed6911e8b5edb91158268098",
+    "content":
+      "一个人的成熟与否，不是出口成章，说出很多深刻的道理或者是思想境界达到很高，而是待人接物让人舒适，并且不卑不亢，保持自我的棱角，又有接纳他人的圆润。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "6dc75898ed6911e8b5edb91158268098",
+    "content": "有人呱呱坠地，就有人垂垂老矣。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "6dc75899ed6911e8b5edb91158268098",
+    "content":
+      "二战美国统计飞机伤亡情况，发现飞回来的都是飞机腹部中弹多，于是申请加固飞机腹部。司令部下发的文件却是加固机翼，因为机翼受损的都没飞回来，那些没飞回来的数据被称作 沉默的数据。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "6dc7589aed6911e8b5edb91158268098",
+    "content":
+      "所有有趣的小孩子在学校行走，突告母亲，姐姐送伞来，必羞涩，这是心理。小学，性质上就是伊甸园。儿童有儿童的浪漫主义，一时出现父母，拉回现实。天堂人间不能共存，世俗和理想难以沟通。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:42:50"
+  },
+  {
+    "_id": "795c9d20f46f11e8ab0ce37e61f138ef",
+    "content":
+      "人长大的标志，就是不爱发脾气了，因为能让你在意的事情变少了，以前能冒犯到你的，现在都变得无所谓了，就像灰尘落在身上，轻轻拂去就好了。你还有很长的路要走，你还有很亮的星星要去看，成熟就是不再为不值得的人浪费时间了，最珍贵的记忆要留给最美丽的风景。​​​​",
+    "author": "一禅小和尚",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "795f3530f46f11e8ab0ce37e61f138ef",
+    "content":
+      "什么是幸福？一是睡在自家的床上，二是吃父母做的饭菜，三是听爱人给你说情话，四是跟孩子做游戏。​​​​",
+    "author": "林语堂",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "795f3531f46f11e8ab0ce37e61f138ef",
+    "content": "间歇性踌躇满志、持续性混吃等死。​​​​",
+    "author": "佚名",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "795f3532f46f11e8ab0ce37e61f138ef",
+    "content": "蓬生麻中，不扶而直，白沙在涅，与之俱黑。​​​​",
+    "author": "荀子-劝学",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "795f3533f46f11e8ab0ce37e61f138ef",
+    "content":
+      "三十岁的肩膀上扛着再也不是自己一个人，而是一个男人该扛起来的责任，上有老人，中有老婆，下有孩子。​​​​",
+    "author": "王小波",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "795f3534f46f11e8ab0ce37e61f138ef",
+    "content":
+      "春有百花秋有月，夏有凉风冬有雪。莫将闲事挂心头，便是人间好时节。​​​​",
+    "author": "释绍昙（宋）-颂古五十五首其一",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "795f3535f46f11e8ab0ce37e61f138ef",
+    "content": "既往不恋，当下不杂，未来不迎。​​​​",
+    "author": "曾国藩",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "795f3536f46f11e8ab0ce37e61f138ef",
+    "content": "善战者不败，善败者不亡。​​​​",
+    "author": "诸葛亮",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "795f5c40f46f11e8ab0ce37e61f138ef",
+    "content":
+      "古者富贵而名摩灭，不可胜记，唯倜傥非常之人称焉。盖文王拘而演《周易》；仲尼厄而作《春秋》；屈原放逐，乃赋《离骚》；左丘失明，厥有《国语》；孙子膑脚，《兵法》修列；不韦迁蜀，世传《吕览》；韩非囚秦，《说难》《孤愤》；《诗》三百篇，此皆圣贤发愤之所为作也。此人皆意有所郁结，不得通其道，故述往事、思来者。​​​​",
+    "author": "司马迁-报任安书",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "795f5c41f46f11e8ab0ce37e61f138ef",
+    "content": "扬善于公庭,规过于私室。​​​​",
+    "author": "曾国藩",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "795f5c42f46f11e8ab0ce37e61f138ef",
+    "content": "知是行的主意，行是知的功夫；知是行之始，行是知之成。​​​​",
+    "author": "王阳明",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "795f5c43f46f11e8ab0ce37e61f138ef",
+    "content": "知之真切笃实处即是行，行之明觉精察处即是知。​​​​",
+    "author": "王阳明",
+    "createDate": "2018-11-30 15:13:44"
+  },
+  {
+    "_id": "W_T0EkXacNtiP6mi",
+    "content":
+      "知人者智，自知者明； 胜人者有力，自胜者强； 知足者富，强行者有志； 不失其所者久，死而不亡者寿。",
+    "author": "老子",
+    "createDate": "2018-11-21 13:58:42"
+  },
+  {
+    "_id": "W_TUA0XacNtiP6mX",
+    "author": "宋人张咏",
+    "createDate": "2018-11-21 14:32:25",
+    "content": "临事有三难。能见，一也。见而能行，二也。当行必果决，三也",
+  },
+  {
+    "_id": "W_TUSXahafTeBPOX",
+    "content": "凡是值得知道的，没有一个是能够教会的。",
+    "author": "奥斯卡 王尔德",
+    "createDate": "2018-11-21 11:04:23",
+  },
+  {
+    "_id": "W_TUeTxe6pOxy3f-",
+    "content":
+      "凡发一谋，举一事，必有风波磨折，必有浮议摇撼。坚忍力争而后有济。",
+    "author": "曾国藩",
+    "createDate": "2018-11-21 11:43:53",
+  },
+  {
+    "_id": "W_TzH3ahafTeBPOj",
+    "author": "安托万·德·圣·埃克苏佩",
+    "createDate": "2018-11-21 13:54:37",
+    "content":
+      "如果你想做一艘船，不要召集大家搜集木头，不要给他们分配任务， 而是要教会他们对浩瀚的大海心生憧憬。"
+  },
+  {
+    "_id": "W_TzYyfIZl09sRvQ",
+    "author": "佛洛依德",
+    "createDate": "2018-11-21 13:55:46",
+    "content":
+      "一个3岁的男孩在一间黑屋子里大叫：“阿姨，和我说话，我害怕，这里太黑了。” 阿姨回应：“那样做有什么用？你又看不到我。” 男孩说：“没关系，有人说话就能带来光。”"
+  },
+  {
+    "_id": "W_TzyXahafTeBPOk",
+    "createDate": "2018-11-21 13:57:30",
+    "content":
+      "上士闻道，勤而习之。中士闻道，若存若亡。下士闻道，大笑之，不笑不足以为道。",
+    "author": "老子"
+  },
+  {
+    "_id": "d8906c60ed6a11e89ae8b5198c8b1b08",
+    "content":
+      "古人学问无遗力，少壮功夫老始成。 纸上得来终觉浅，须知此事要躬行。",
+    "author": "陆游",
+    "createDate": "2018-11-21 16:52:59",
+  },
+  {
+    "_id": "d89108a0ed6a11e89ae8b5198c8b1b08",
+    "content":
+      "做一个寡言的人，却心有一片海，不伤人，不伤己。做一个淡泊的人，却怀揣斑斓的梦，不抛弃，不放弃。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:52:59",
+  },
+  {
+    "_id": "d89108a1ed6a11e89ae8b5198c8b1b08",
+    "content": "若有恒，何必三更眠五更起；最无益，莫过一日曝十日寒",
+    "author": "明代学者胡居仁",
+    "createDate": "2018-11-21 16:52:59"
+  },
+  {
+    "_id": "d89108a2ed6a11e89ae8b5198c8b1b08",
+    "content":
+      "一个不成熟男子的标志是他愿意为某种事业英勇地死去，一个成熟男子的标志是他愿意为某种事业卑贱地活着。",
+    "author": "麦田守望者",
+    "createDate": "2018-11-21 16:52:59"
+  },
+  {
+    "_id": "d89108a3ed6a11e89ae8b5198c8b1b08",
+    "content": "一到考核就紧张，一挨批评就夸海口说狠话。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:52:59"
+  },
+  {
+    "_id": "d89108a4ed6a11e89ae8b5198c8b1b08",
+    "content":
+      "万里车书一混同，江南岂有别疆封？提兵百万西湖上，立马吴山第一峰！",
+    "author": "完颜亮",
+    "createDate": "2018-11-21 16:52:59"
+  },
+  {
+    "_id": "d89108a5ed6a11e89ae8b5198c8b1b08",
+    "content":
+      "李自成为什么会失败，他的军队攻破明朝都城之后，都是带着巨款财富重上战场的，几乎每个士兵都带着金饼子，试问谁还会再玩命拼杀？ 都想留下一条命好去享受。 这就是为什么不能在战争进行中给军队实赏，而是记功，回家之后再兑现的原因所在。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:52:59"
+  },
+  {
+    "_id": "d89108a6ed6a11e89ae8b5198c8b1b08",
+    "content":
+      "终日奔忙只为饥，才得有食又思衣。置下绫罗身上穿，抬头却嫌房屋低。盖了高楼并大厦，床前缺少美貌妻。娇妻美妾都娶下，忽虑出门没马骑。买了高头金鞍马，马前马后少跟随。 招了家丁数十个，有钱没权被人欺。时来运转当知县，抱怨官小职位卑。做过尚书升阁老，朝思暮想要登基。",
+    "author": "十不足-朱载堉",
+    "createDate": "2018-11-21 16:52:59"
+  },
+  {
+    "_id": "d8912fb0ed6a11e89ae8b5198c8b1b08",
+    "content": "值得开始的事情就值得去完成。",
+    "author": "佚名",
+    "createDate": "2018-11-21 16:52:59"
+  },
+  {
+    "_id": "df6046a0eeff11e8a720f985f305dae5",
+    "content":
+      "你问我出生前在做什么？    我答：我在天上挑妈妈。    看见你了，    觉得你特别好，    想做你的孩子，    又觉得自己可能没那个运气，    没想到，    第二天一早，    我已经在你肚子里。",
+    "author": "佚名",
+    "createDate": "2018-11-23 17:12:16",
+  },
+  {
+    "_id": "df6094c0eeff11e8a720f985f305dae5",
+    "content":
+      "人才非困厄（困苦危难）而不能激，非危心深虑（常怀谨慎之心深刻思虑）则不能达(通达)",
+    "author": "曾国藩",
+    "createDate": "2018-11-23 17:12:16",
+  },
+  {
+    "_id": "df60bbd0eeff11e8a720f985f305dae5",
+    "content": "善战者无赫赫之功，善医者无煌煌之名。",
+    "author": "孙子兵法",
+    "createDate": "2018-11-23 17:12:16"
+  },
+  {
+    "_id": "df60bbd1eeff11e8a720f985f305dae5",
+    "content": "先为不可胜，以待敌之可胜。",
+    "author": "孙子兵法",
+    "createDate": "2018-11-23 17:12:16"
+  },
+  {
+    "_id": "df60bbd2eeff11e8a720f985f305dae5",
+    "content": "家人闲坐，灯火可亲。",
+    "author": "汪曾祺",
+    "createDate": "2018-11-23 17:12:16"
+  },
+  {
+    "_id": "df60bbd3eeff11e8a720f985f305dae5",
+    "content": "父母在，人生尚有来处； 父母去，人生只剩归途。",
+    "author": "佚名",
+    "createDate": "2018-11-23 17:12:16"
+  },
+  {
+    "_id": "df60bbd4eeff11e8a720f985f305dae5",
+    "content": "世人皆知有用之用，莫知无用之用。",
+    "author": "庄子",
+    "createDate": "2018-11-23 17:12:16"
+  },
+  {
+    "_id": "df60bbd5eeff11e8a720f985f305dae5",
+    "content":
+      "老师讲过一句格言：当英雄路过的时候，总要有人坐在路边鼓掌。妈妈，我不想成为英雄，我想成为坐在路边鼓掌的人。",
+    "author": "坐在路边鼓掌的人",
+    "createDate": "2018-11-23 17:12:16"
+  },
+  {
+    "_id": "df60bbd6eeff11e8a720f985f305dae5",
+    "content":
+      "三个建筑工人正在砌砖头。 路人问第一个工人：“你在干什么？”工人回答：“我在砌砖头。” 他问第二个工人：“你在干什么？”工人回答：“我正在建造一堵墙。” 他问第三个工人：“你在干什么？”工人回答：“我正在修建一座大教堂！”",
+    "author": "佚名",
+    "createDate": "2018-11-23 17:12:16"
+  },
+  {
+    "_id": "df60bbd7eeff11e8a720f985f305dae5",
+    "content":
+      "此事余有三大过：平日不信不敬，相恃太深，一也；比时一语不合，忿恨无礼，二也；龃龉（ju yu）之后，人之平易，我反悍然不近人情，三也。恶言不出于口，忿言不反于身，此之不知，遑问其他？谨记于此，以为切戒！",
+    "author": "曾国藩",
+    "createDate": "2018-11-23 17:12:16"
+  },
+  {
+    "_id": "ed84fed0f7a911e8b6263fc7b845d15c",
+    "content":
+      "井蛙不可以语于海者，拘于虚也；夏虫不可以语于冰者，笃于时也；曲士不可以语于道者，束于教也。",
+    "author": "庄子",
+    "createDate": "2018-12-04 17:49:44"
+  },
+  {
+    "_id": "ed861040f7a911e8b6263fc7b845d15c",
+    "content":
+      "世俗之人，皆喜人之同乎己而恶人之异于己也。同于己而欲之，异于己而不欲者，以出乎众为心也。",
+    "author": "庄子",
+    "createDate": "2018-12-04 17:49:44"
+  },
+  {
+    "_id": "ed863750f7a911e8b6263fc7b845d15c",
+    "content": "庖人虽不治庖，尸祝不越樽俎而代之矣。",
+    "author": "庄子",
+    "createDate": "2018-12-04 17:49:44"
+  },
+  {
+    "_id": "ed863751f7a911e8b6263fc7b845d15c",
+    "content": "悲观的人虽生犹死，乐观的人永生不老。",
+    "author": "佚名",
+    "createDate": "2018-12-04 17:49:44"
+  },
+  {
+    "_id": "ed863752f7a911e8b6263fc7b845d15c",
+    "content": "生命好在无意义，才容得下各自赋予意义。",
+    "author": "木心先生-素履之往",
+    "createDate": "2018-12-04 17:49:44"
+  },
+  {
+    "_id": "ed863753f7a911e8b6263fc7b845d15c",
+    "content":
+      "一个肮脏的国家，如果人人讲规则而不是谈道德，最终会变成一个有人味儿的正常国家，道德自然会逐渐回归；一个干净的国家，如果人人都不讲规则却大谈道德，谈高尚，天天没事儿就谈道德规范，人人大公无私，最终这个国家会堕落成为一个伪君子遍布的肮脏国家。",
+    "author": "胡适",
+    "createDate": "2018-12-04 17:49:44"
+  },
+  {
+    "_id": "ed863754f7a911e8b6263fc7b845d15c",
+    "content":
+      "道德不能侵犯权利，道德对权利的侵犯，本身就是不道德的。道德只是一种自律的工具，如果用来他律，往往会超出道德的范围。",
+    "author": "佚名",
+    "createDate": "2018-12-04 17:49:44"
+  },
+  {
+    "_id": "ed863755f7a911e8b6263fc7b845d15c",
+    "content":
+      "春秋时期，鲁国规定，凡是鲁国人到国外去，看到本国人在外国为奴隶的，可以先垫钱赎回，回国后到政府报账。孔子的学生子贡在国外赎回了一个鲁国人，但却没有到政府去报账。国人都夸子贡人品高尚，但孔子却不以为然。孔子批评子贡不该这么做。他批评子贡：你的“高尚”的行为，最终会导致没有人愿意赎回奴隶。因为买了不报账是品德高尚，如果我买了再去报账就会被说人品不好，谁还会再去垫钱赎奴隶。事实证明孔子是对的，从子贡以后，很少有人去政府报账，但是解救的奴隶也少了。",
+    "author": "小善如大恶",
+    "createDate": "2018-12-04 17:49:44"
+  },
+  {
+    "_id": "ed863756f7a911e8b6263fc7b845d15c",
+    "content":
+      "你要记住那些大雨中为你撑伞的人，帮你挡住外来之物的人，黑暗中默默抱紧你的人，逗你笑的人，陪你彻夜聊天的人，坐车来看望的人。",
+    "author": "村上春树",
+    "createDate": "2018-12-04 17:49:44"
+  }
 ]
