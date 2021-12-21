@@ -22,30 +22,18 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
     />
     <title>Ant Design Pro</title>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="/umi.03173ac0.css" />
-    <script>
-      window.routerBase = "/";
-    </script>
-    <script>
-      //! umi version: 3.5.20
-    </script>
+    <link rel="icon" href="<%= context.config.publicPath +'favicon.ico'%>" type="image/x-icon" />
   </head>
   <body>
     <noscript>
       <div class="noscript-container">
         Hi there! Please
         <div class="noscript-enableJS">
-          <a
-            href="https://www.enablejavascript.io/en"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://www.enablejavascript.io/en" target="_blank" rel="noopener noreferrer">
             <b>enable Javascript</b>
           </a>
         </div>
-        in your browser to use Ant Design, Out-of-the-box mid-stage front/design
-        solution!
+        in your browser to use Ant Design, Out-of-the-box mid-stage front/design solution!
       </div>
     </noscript>
     <div id="root">
@@ -67,8 +55,8 @@
           justify-content: center;
           margin-top: 90px;
           font-size: 20px;
-          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+            Geneva, Verdana, sans-serif;
         }
         .noscript-enableJS {
           padding-right: 3px;
@@ -95,15 +83,13 @@
           text-align: center;
           list-style: none;
           opacity: 0;
-          -webkit-transition: -webkit-transform 0.3s
-            cubic-bezier(0.78, 0.14, 0.15, 0.86);
-          transition: -webkit-transform 0.3s
-            cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
+          transition: -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
           transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
           transition: transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86),
             -webkit-transform 0.3s cubic-bezier(0.78, 0.14, 0.15, 0.86);
-          -webkit-font-feature-settings: "tnum";
-          font-feature-settings: "tnum";
+          -webkit-font-feature-settings: 'tnum';
+          font-feature-settings: 'tnum';
         }
 
         .ant-spin-spinning {
@@ -226,7 +212,7 @@
           min-height: 420px;
         "
       >
-        <img src="/pro_icon.svg" alt="logo" width="256" />
+        <img src="<%= context.config.publicPath +'pro_icon.svg'%>" alt="logo" width="256" />
         <div class="page-loading-warp">
           <div class="ant-spin ant-spin-lg ant-spin-spinning">
             <span class="ant-spin-dot ant-spin-dot-spin"
@@ -235,14 +221,10 @@
             ></span>
           </div>
         </div>
-        <div
-          style="display: flex; align-items: center; justify-content: center"
-        >
+        <div style="display: flex; align-items: center; justify-content: center">
           他强任他强，清风佛山岗；他横任他横，明月照大江；他自强来他自横，我自一口真气足。
         </div>
       </div>
     </div>
-
-    <script src="/umi.a53186da.js"></script>
   </body>
 </html>
