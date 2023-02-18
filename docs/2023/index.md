@@ -3,4 +3,4 @@
 - [2023-01-脚手架开发yargs和command](./2023-01-脚手架开发yargs和command.md)
 - [2023-01-脚手架开发yargs和command](./2023-01-脚手架开发yargs和command.md)
 - [2023-01-pnpm和yarn和npm发展史](./2023-01-pnpm和yarn和npm发展史.md)
-- [2023-01-Service Worker](./2023-01-Service Worker.md)
+- [2023-01-ServiceWorker](./2023-01-ServiceWorker.md)
