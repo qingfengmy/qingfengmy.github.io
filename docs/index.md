@@ -25,12 +25,12 @@ features:
     details: 之后转微信小程序开发，学习js和css.
   - title: React
     details: React无师自通，顺利进入前端领域.
+  - title: VUE
+    details: 大前端必须会的框架.
   - title: React Native
     details: 一次编译，到处运行，支持跨移动端开发.
   - title: Electron
     details: chromium包裹react，实现跨PC端开发.
-  - title: VUE
-    details: 大前端必须会的框架.
   - title: NODE
     details: 全栈怎么能少了后端语言.
   - title: CHROME-EXTENSION

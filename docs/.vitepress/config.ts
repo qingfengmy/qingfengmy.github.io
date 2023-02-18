@@ -25,7 +25,6 @@ export default defineConfig({
   themeConfig: {
     logo: '/favicon.jpg',
     siteTitle: '长空',
-
     nav: nav(),
 
     sidebar: {
@@ -46,13 +45,12 @@ export default defineConfig({
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2019-present Evan You'
     },
-  }
+  },
 })
 
 function nav() {
   return [
     { text: '2023', link: '/2023/index', activeMatch: '/2023/' },
     { text: '2022', link: '/2022/index', activeMatch: '/2022/' },
-    { text: '2021', link: '/2022/index', activeMatch: '/2022/' },
   ]
 }
