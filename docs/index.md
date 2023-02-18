@@ -22,9 +22,9 @@ features:
   - title: "ANDROID"
     details: 早年的android开发者，用java语言，写移动APP.
   - title: 微信小程序
-    details: 后来转微信小程序开发，学习js和css.
+    details: 之后转微信小程序开发，学习js和css.
   - title: React
-    details: React无师自通，进入前端领域.
+    details: React无师自通，顺利进入前端领域.
   - title: React Native
     details: 一次编译，到处运行，支持跨移动端开发.
   - title: Electron
