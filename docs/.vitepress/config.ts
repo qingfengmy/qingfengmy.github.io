@@ -53,5 +53,6 @@ function nav() {
   return [
     { text: '2023', link: '/2023/index', activeMatch: '/2023/' },
     { text: '2022', link: '/2022/index', activeMatch: '/2022/' },
+    { text: '2021', link: '/2022/index', activeMatch: '/2022/' },
   ]
 }
