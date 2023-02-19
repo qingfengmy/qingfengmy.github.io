@@ -8,13 +8,14 @@ const pkg = require('vitepress/package.json')
 
 export default defineConfig({
   lang: 'zh-CN',
-  title: '长空',
+  title: '长空的博客',
   description: '一尊今雨，万里长空',
 
   lastUpdated: true,
   cleanUrls: true,
-
-  head: [['meta', { name: 'theme-color', content: '#3c8772' }]],
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.jpg' }],
+    ['meta', { name: 'theme-color', content: '#3c8772' }]],
 
   markdown: {
     headers: {
@@ -24,7 +25,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/favicon.jpg',
-    siteTitle: '长空',
+    siteTitle: '『 长空的博客 』',
     nav: nav(),
 
     sidebar: {
