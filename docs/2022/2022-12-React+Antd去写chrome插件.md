@@ -752,7 +752,7 @@ module.exports={
 ```jsx
 .env.development
 
-REACT_APP_API_URL=https://sth-api.leyanbot.com/eci-ziying-api
+REACT_APP_API_URL=https://qingfengmy.com/api
 ```
 ```jsx
 .env.production

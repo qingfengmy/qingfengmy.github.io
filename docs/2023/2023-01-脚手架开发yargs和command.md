@@ -35,10 +35,10 @@ yargs(arg).argv
 ```
 执行命令
 ```nginx
-taozhang@zhangtaodeMacBook-Pro yargs % npm link
+zhang@zhangMacBook-Pro yargs % npm link
 
 added 1 package in 638ms
-taozhang@zhangtaodeMacBook-Pro yargs % qingfengmy-yargs --help
+zhang@zhangMacBook-Pro yargs % qingfengmy-yargs --help
 选项：
   --help     显示帮助信息                                                 [布尔]
   --version  显示版本号                                                   [布尔]
@@ -46,8 +46,8 @@ taozhang@zhangtaodeMacBook-Pro yargs % qingfengmy-yargs --help
 ### 2.2 原理
 命令行里执行`qingfengmy-yargs`的时候，会去`环境变量`中找，我们电脑已经安装了node，node的环境变量位置
 ```nginx
-taozhang@zhangtaodeMacBook-Pro yargs % where qingfengmy-yargs
-/Users/taozhang/.nvm/versions/node/v16.17.0/bin/qingfengmy-yargs
+zhang@zhangMacBook-Pro yargs % where qingfengmy-yargs
+/Users/zhang/.nvm/versions/node/v16.17.0/bin/qingfengmy-yargs
 ```
 而执行`npm link`就是把`软连接`放到`node/bin`目录下
 ![图片.png](https://cdn.nlark.com/yuque/0/2022/png/247102/1671074007784-196bf0b7-6ed2-4e91-9b25-28086a35d7e7.png#averageHue=%23101010&clientId=u5cd211be-2223-4&from=paste&height=492&id=ufd0c8a17&name=%E5%9B%BE%E7%89%87.png&originHeight=984&originWidth=2410&originalType=binary&ratio=1&rotation=0&showTitle=false&size=343714&status=done&style=none&taskId=u22bc3782-0db5-49ca-be71-ee3d4be9a08&title=&width=1205)那么命令行里执行`qingfengmy-yargs`就是执行`index.js`文件。但是我们一般不是需要`node index.js`这样去执行吗？现在怎么能直接执行`index.js`呢？
@@ -59,7 +59,7 @@ console.log('sss');
 ```
 然后直接执行`bin/index.js`，发现也是可以直接执行的。
 ```nginx
-taozhang@zhangtaodeMacBook-Pro yargs % bin/index.js
+zhang@zhangMacBook-Pro yargs % bin/index.js
 sss
 ```
 原因就是这行代码
@@ -208,7 +208,7 @@ program
 ```
 注意带参和不带参的区别
 ```javascript
-taozhang@zhangtaodeMacBook-Pro commander % qingfengmy-commander toUpper --log a
+zhang@zhangMacBook-Pro commander % qingfengmy-commander toUpper --log a
 A
 ```
 ### 3.3 其他高级用法
@@ -230,9 +230,9 @@ service
   })
 ```
 ```javascript
-taozhang@zhangtaodeMacBook-Pro commander % qingfengmy-commander service start 2222
+zhang@zhangMacBook-Pro commander % qingfengmy-commander service start 2222
 service start 2222
-taozhang@zhangtaodeMacBook-Pro commander % qingfengmy-commander service stop 2222
+zhang@zhangMacBook-Pro commander % qingfengmy-commander service stop 2222
 service stop 2222
 ```
 #### 3.3.2 参数说明
@@ -244,7 +244,7 @@ service.argument('<cmd> [options]')
   })
 ```
 ```javascript
-taozhang@zhangtaodeMacBook-Pro commander % qingfengmy-commander service  -h
+zhang@zhangMacBook-Pro commander % qingfengmy-commander service  -h
 Usage: kobe service [options] [command] <cmd> [options>
 
 参数说明
@@ -256,7 +256,7 @@ Commands:
   start [port]    启动服务器
   stop [port]     停止服务器
   help [command]  display help for command
-taozhang@zhangtaodeMacBook-Pro commander %
+zhang@zhangMacBook-Pro commander %
 ```
 #### 3.3.3 和别的命令交互
 ```javascript
@@ -268,8 +268,8 @@ const init = program
 ```
 command多了第二个参数，导致执行`qingfengmy-command init aaa`时，变成了`kobe-init aaa`
 ```javascript
-taozhang@zhangtaodeMacBook-Pro commander % qingfengmy-commander init aaa
-/Users/taozhang/demos/demo-git/commander/node_modules/commander/lib/command.js:1030
+zhang@zhangMacBook-Pro commander % qingfengmy-commander init aaa
+/Users/zhang/demos/demo-git/commander/node_modules/commander/lib/command.js:1030
         throw new Error(executableMissing);
         ^
 
