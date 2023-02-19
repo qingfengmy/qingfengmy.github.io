@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path');
 
-const dir = '2023';
+const dir = '2022';
 
 // 读所有目录的文件
 const files = fs.readdirSync(path.join('../docs', dir))
@@ -10,7 +10,7 @@ const files = fs.readdirSync(path.join('../docs', dir))
   }).reverse();
 
 const json = [];
-let content = `${dir}年文章目录 共${files.length}篇
+let content = `# ${dir}年文章目录 共${files.length}篇
 `;
 let lastDate = '';
 for (file of files) {
