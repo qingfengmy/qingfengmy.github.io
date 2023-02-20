@@ -1,0 +1,1 @@
+import{_ as a,c as e,o as i,a as r}from"./app.7f1206cf.js";const m=JSON.parse('{"title":"2022年文章目录 共26篇","description":"","frontmatter":{},"headers":[],"relativePath":"2022/index.md","lastUpdated":1676769034000}'),l={name:"2022/index.md"},h=r("",25),d=[h];function t(n,s,o,f,c,u){return i(),e("div",null,d)}const p=a(l,[["render",t]]);export{m as __pageData,p as default};
