@@ -1,7 +1,7 @@
 const fs = require('fs')
 const path = require('path');
 
-const dir = '2022';
+const dir = '2023';
 
 // 读所有目录的文件
 const files = fs.readdirSync(path.join('../docs', dir))
